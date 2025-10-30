@@ -1396,7 +1396,7 @@ const samplePlayers = [
     isActive: true
   },
   {
-    name: "Xardas",
+    name: "Xardas_AOE",
     country: "Germany",
     rating: 1469.0,
     profileUrl: "https://www.aoe2insights.com/user/186332/",
@@ -1424,7 +1424,7 @@ const samplePlayers = [
     isActive: true
   },
   {
-    name: "Zark",
+    name: "Zark23",
     country: "Canada",
     rating: 1323.0,
     profileUrl: "https://www.aoe2insights.com/user/5284914/",
