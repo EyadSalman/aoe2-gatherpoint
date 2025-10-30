@@ -10,37 +10,37 @@ import Link from "next/link"
 const discordServers = [
   {
     name: "AoeLeagues",
-    description: "Premier competitive Age of Empires 2 tournaments and leagues",
+    description: "Hosts a competitive league where players choose their own home maps.",
     url: "https://discord.gg/5dkUe5xtzq",
     featured: true,
   },
   {
     name: "T90 Community Tournaments",
-    description: "Community-driven tournaments hosted by T90Official",
+    description: "Community events for tournaments hosted by T90Official",
     url: "https://discord.com/invite/vMpPuPjba8",
     featured: true,
   },
   {
     name: "Practice Squad",
-    description: "Find practice partners and improve your gameplay",
+    description: "All the funky and chaotic stuff can be found here",
     url: "https://discord.gg/SzUxGRK3Ez",
     featured: true,
   },
   {
     name: "Akkal",
-    description: "Competitive tournaments and strategic discussions",
+    description: "The ultimate hub for team-based Age of Empires II tournaments",
     url: "https://discord.gg/6PedAG6vGv",
     featured: true,
   },
   {
     name: "Alchemy AOE Community",
-    description: "High-level competitive play and tournament organization",
+    description: "New custom maps every new season with an exciting theme",
     url: "https://discord.gg/gd5rht665X",
     featured: true,
   },
   {
     name: "Low Elo Legion",
-    description: "Tournaments and community for players of all skill levels",
+    description: "The home of epic fails, unexpected wins, and the most entertaining moments in Age of Empires",
     url: "https://discord.gg/etdpkXuyzK",
     featured: true,
   },
@@ -128,26 +128,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Quick Stats Section */}
-      <section className="py-16 px-4 bg-muted/50">
-        <div className="container mx-auto">
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">50+</div>
-              <div className="text-sm text-muted-foreground">Active Tournaments</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">10,000+</div>
-              <div className="text-sm text-muted-foreground">Registered Players</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">25+</div>
-              <div className="text-sm text-muted-foreground">Tournament Maps</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Patreon Support Section */}
       <section className="py-16 px-4 border-t">
