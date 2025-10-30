@@ -1431,152 +1431,152 @@ const samplePlayers = [
     isActive: true
   },
   {
-    "name": "King_Boo",
-    "country": "United Kingdom",
-    "rating": 2154,
-    "profileUrl": "https://www.aoe2insights.com/user/180520",
-    "isActive": true
-  },
-  {
-    "name": "randy pan",
-    "country": "Canada",
-    "rating": 1682,
-    "profileUrl": "https://www.aoe2insights.com/user/1070306",
-    "isActive": true
-  },
-  {
-    "name": "Meh247",
-    "country": "United States",
-    "rating": 1675,
-    "profileUrl": "https://www.aoe2insights.com/user/529262",
-    "isActive": true
-  },
-  {
-    "name": "1Sh0t",
-    "country": "Canada",
-    "rating": 1460,
-    "profileUrl": "https://www.aoe2insights.com/user/9319174",
-    "isActive": true
-  },
-  {
-    "name": "Chris",
-    "country": "United States",
-    "rating": 1438,
-    "profileUrl": "https://www.aoe2insights.com/user/11769331",
-    "isActive": true
-  },
-  {
-    "name": "McNuggets",
-    "country": "Switzerland",
-    "rating": 1294,
-    "profileUrl": "https://www.aoe2insights.com/user/334334",
-    "isActive": true
-  },
-  {
-    "name": "aje.omar",
-    "country": "Mexico",
-    "rating": 1245,
-    "profileUrl": "https://www.aoe2insights.com/user/9189507",
-    "isActive": true
-  },
-  {
-    "name": "grapejuice",
-    "country": "Australia",
-    "rating": 1207,
-    "profileUrl": "https://www.aoe2insights.com/user/11688652",
-    "isActive": true
-  },
-  {
-    "name": "Laurie",
-    "country": "United Kingdom",
-    "rating": 1200,
-    "profileUrl": "https://www.aoe2insights.com/user/243944",
-    "isActive": true
-  },
-  {
-    "name": "Fairytale Belkross",
-    "country": "France",
-    "rating": 1187,
-    "profileUrl": "https://www.aoe2insights.com/user/1370771",
-    "isActive": true
-  },
-  {
-    "name": "Forteraiger",
-    "country": "Ukraine",
-    "rating": 1142,
-    "profileUrl": "https://www.aoe2insights.com/user/13285902",
-    "isActive": true
-  },
-  {
-    "name": "Smithers",
-    "country": "Sweden",
-    "rating": 1173,
-    "profileUrl": "https://www.aoe2insights.com/user/1304628",
-    "isActive": true
-  },
-  {
-    "name": "SoleZebrafish",
-    "country": "United States",
-    "rating": 1061,
-    "profileUrl": "https://www.aoe2insights.com/user/2650734",
-    "isActive": true
-  },
-  {
-    "name": "Forkan Rick",
-    "country": "United States",
-    "rating": 1077,
-    "profileUrl": "https://www.aoe2insights.com/user/2363867",
-    "isActive": true
-  },
-  {
-    "name": "marathaSun",
-    "country": "India",
-    "rating": 1081,
-    "profileUrl": "https://www.aoe2insights.com/user/2543215",
-    "isActive": true
-  },
-  {
-    "name": "Jasuni",
-    "country": "United States",
-    "rating": 1057,
-    "profileUrl": "https://www.aoe2insights.com/user/1464223",
-    "isActive": true
-  },
-  {
-    "name": "QuailzEnFire903",
-    "country": "United States",
-    "rating": 1034,
-    "profileUrl": "https://www.aoe2insights.com/user/12964183",
-    "isActive": true
-  },
-  {
-    "name": "Nagraj",
-    "country": "India",
-    "rating": 1007,
-    "profileUrl": "https://www.aoe2insights.com/user/6903668",
-    "isActive": true
-  },
-  {
-    "name": "Fairytale Fox",
-    "country": "Canada",
-    "rating": 908,
-    "profileUrl": "https://www.aoe2insights.com/user/4662319",
-    "isActive": true
-  },
-  {
-    "name": "schmabenkl",
-    "country": "Germany",
-    "rating": 924,
-    "profileUrl": "https://www.aoe2insights.com/user/1880713",
-    "isActive": true
-  },
-  {
-    "name": "Crystella",
-    "country": "United Kingdom",
-    "rating": 790,
-    "profileUrl": "https://www.aoe2insights.com/user/3892549",
-    "isActive": true
-  }
+  name: "King_Boo",
+  country: "United Kingdom",
+  rating: 2154,
+  profileUrl: "https://www.aoe2insights.com/user/180520",
+  isActive: true
+},
+{
+  name: "randy pan",
+  country: "Canada",
+  rating: 1682,
+  profileUrl: "https://www.aoe2insights.com/user/1070306",
+  isActive: true
+},
+{
+  name: "Meh247",
+  country: "United States",
+  rating: 1675,
+  profileUrl: "https://www.aoe2insights.com/user/529262",
+  isActive: true
+},
+{
+  name: "1Sh0t",
+  country: "Canada",
+  rating: 1460,
+  profileUrl: "https://www.aoe2insights.com/user/9319174",
+  isActive: true
+},
+{
+  name: "Chris",
+  country: "United States",
+  rating: 1438,
+  profileUrl: "https://www.aoe2insights.com/user/11769331",
+  isActive: true
+},
+{
+  name: "McNuggets",
+  country: "Switzerland",
+  rating: 1294,
+  profileUrl: "https://www.aoe2insights.com/user/334334",
+  isActive: true
+},
+{
+  name: "aje.omar",
+  country: "Mexico",
+  rating: 1245,
+  profileUrl: "https://www.aoe2insights.com/user/9189507",
+  isActive: true
+},
+{
+  name: "grapejuice",
+  country: "Australia",
+  rating: 1207,
+  profileUrl: "https://www.aoe2insights.com/user/11688652",
+  isActive: true
+},
+{
+  name: "Laurie",
+  country: "United Kingdom",
+  rating: 1200,
+  profileUrl: "https://www.aoe2insights.com/user/243944",
+  isActive: true
+},
+{
+  name: "Fairytale Belkross",
+  country: "France",
+  rating: 1187,
+  profileUrl: "https://www.aoe2insights.com/user/1370771",
+  isActive: true
+},
+{
+  name: "Forteraiger",
+  country: "Ukraine",
+  rating: 1142,
+  profileUrl: "https://www.aoe2insights.com/user/13285902",
+  isActive: true
+},
+{
+  name: "Smithers",
+  country: "Sweden",
+  rating: 1173,
+  profileUrl: "https://www.aoe2insights.com/user/1304628",
+  isActive: true
+},
+{
+  name: "SoleZebrafish",
+  country: "United States",
+  rating: 1061,
+  profileUrl: "https://www.aoe2insights.com/user/2650734",
+  isActive: true
+},
+{
+  name: "Forkan Rick",
+  country: "United States",
+  rating: 1077,
+  profileUrl: "https://www.aoe2insights.com/user/2363867",
+  isActive: true
+},
+{
+  name: "marathaSun",
+  country: "India",
+  rating: 1081,
+  profileUrl: "https://www.aoe2insights.com/user/2543215",
+  isActive: true
+},
+{
+  name: "Jasuni",
+  country: "United States",
+  rating: 1057,
+  profileUrl: "https://www.aoe2insights.com/user/1464223",
+  isActive: true
+},
+{
+  name: "QuailzEnFire903",
+  country: "United States",
+  rating: 1034,
+  profileUrl: "https://www.aoe2insights.com/user/12964183",
+  isActive: true
+},
+{
+  name: "Nagraj",
+  country: "India",
+  rating: 1007,
+  profileUrl: "https://www.aoe2insights.com/user/6903668",
+  isActive: true
+},
+{
+  name: "Fairytale Fox",
+  country: "Canada",
+  rating: 908,
+  profileUrl: "https://www.aoe2insights.com/user/4662319",
+  isActive: true
+},
+{
+  name: "schmabenkl",
+  country: "Germany",
+  rating: 924,
+  profileUrl: "https://www.aoe2insights.com/user/1880713",
+  isActive: true
+},
+{
+  name: "Crystella",
+  country: "United Kingdom",
+  rating: 790,
+  profileUrl: "https://www.aoe2insights.com/user/3892549",
+  isActive: true
+}
 ];
 
 
