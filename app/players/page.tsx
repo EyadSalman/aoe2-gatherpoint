@@ -94,9 +94,24 @@ export default function GlossaryPage() {
   }, [players])
 
   const letters = useMemo(() => {
-    const unique = [...new Set(players.map((p) => p.name[0].toUpperCase()))]
-    return unique.sort()
-  }, [players])
+  const lettersSet = new Set<string>()
+  let hasOthers = false
+
+  players.forEach((p) => {
+    const firstChar = p.name?.[0]?.toUpperCase() || "#"
+    if (/^[A-Z]$/.test(firstChar)) {
+      lettersSet.add(firstChar)
+    } else {
+      hasOthers = true
+    }
+  })
+
+  const sorted = Array.from(lettersSet).sort()
+  if (hasOthers) sorted.unshift("#") // Add “Others” at the start
+  return sorted
+}, [players])
+
+
 
   const filteredPlayers = useMemo(() => {
     return players.filter((p) => {
@@ -105,7 +120,11 @@ export default function GlossaryPage() {
         p.country.toLowerCase().includes(searchTerm.toLowerCase())
 
       const matchesCountry = selectedCountry === "all" || p.country === selectedCountry
-      const matchesLetter = selectedLetter === "all" || p.name[0].toUpperCase() === selectedLetter
+      const matchesLetter =
+        selectedLetter === "all" ||
+        (selectedLetter === "#" && !/^[A-Z]/i.test(p.name[0])) ||
+        p.name[0].toUpperCase() === selectedLetter
+
 
       const matchesRating =
         selectedRating === "all" ||
@@ -121,14 +140,17 @@ export default function GlossaryPage() {
   }, [players, searchTerm, selectedCountry, selectedLetter, selectedRating])
 
   const groupedPlayers = useMemo(() => {
-    const groups: { [key: string]: any[] } = {}
-    filteredPlayers.forEach((p) => {
-      const letter = p.name[0].toUpperCase()
-      if (!groups[letter]) groups[letter] = []
-      groups[letter].push(p)
-    })
-    return groups
-  }, [filteredPlayers])
+  const groups: { [key: string]: any[] } = { "#": [] }
+
+  filteredPlayers.forEach((p) => {
+    const firstChar = p.name[0]?.toUpperCase() || "#"
+    const letter = /^[A-Z]$/.test(firstChar) ? firstChar : "#"
+    if (!groups[letter]) groups[letter] = []
+    groups[letter].push(p)
+  })
+
+  return groups
+}, [filteredPlayers])
 
   return (
     <div className="min-h-screen bg-background">
@@ -195,18 +217,18 @@ export default function GlossaryPage() {
               </Select>
 
               <Select value={selectedLetter} onValueChange={setSelectedLetter}>
-                <SelectTrigger className="h-11 bg-card border-border/50 focus:border-primary/50">
-                  <SelectValue placeholder="Letter" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Letters</SelectItem>
-                  {letters.map((letter) => (
-                    <SelectItem key={letter} value={letter}>
-                      {letter}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              <SelectTrigger className="h-11 bg-card border-border/50 focus:border-primary/50">
+                <SelectValue placeholder="Letter" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Letters</SelectItem>
+                {letters.map((letter) => (
+                  <SelectItem key={letter} value={letter}>
+                    {letter === "#" ? "Others" : letter}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
             </div>
           </div>
         </div>
@@ -231,26 +253,38 @@ export default function GlossaryPage() {
         )}
 
         {!loading && Object.entries(groupedPlayers).length > 0 && (
-          <div className="space-y-12">
-            {Object.entries(groupedPlayers)
-              .sort()
-              .map(([letter, list]) => (
-                <section key={letter}>
-                  <div className="flex items-center gap-3 mb-6">
-                    <h2 className="text-3xl font-bold text-primary">{letter}</h2>
-                    <Badge variant="secondary" className="text-sm">
-                      {list.length} player{list.length !== 1 ? "s" : ""}
-                    </Badge>
-                  </div>
-                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {list.map((player: any) => (
-                      <PlayerCard key={player._id} player={player} />
-                    ))}
-                  </div>
-                </section>
-              ))}
-          </div>
-        )}
+            <div className="space-y-12">
+              {Object.entries(groupedPlayers)
+                .filter(([letter]) => {
+                  if (selectedLetter === "all") return true
+                  if (selectedLetter === "#" && letter === "#") return true
+                  return letter === selectedLetter
+                })
+                .sort(([a], [b]) => {
+                  if (a === "#") return -1
+                  if (b === "#") return 1
+                  return a.localeCompare(b)
+                })
+                .map(([letter, list]) => (
+                  <section key={letter}>
+                    <div className="flex items-center gap-3 mb-6">
+                      <h2 className="text-3xl font-bold text-primary">
+                        {letter === "#" ? "Others" : letter}
+                      </h2>
+                      <Badge variant="secondary" className="text-sm">
+                        {list.length} player{list.length !== 1 ? "s" : ""}
+                      </Badge>
+                    </div>
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                      {list.map((player: any) => (
+                        <PlayerCard key={player._id} player={player} />
+                      ))}
+                    </div>
+                  </section>
+                ))}
+            </div>
+          )}
+
 
         {!loading && players.length > 0 && (
           <section className="mt-20 pt-16 border-t border-border/50">
