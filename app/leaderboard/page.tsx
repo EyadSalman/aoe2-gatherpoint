@@ -44,8 +44,8 @@ export default function LeaderboardPage() {
             <h1 className="text-5xl font-bold tracking-tight text-balance">Community Leaderboard</h1>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Celebrate the champions. Witness the competition. Explore tournament results and top player performances
-            across all divisions.
+            Explore tournament results and top player performances
+            across different divisions.
           </p>
         </div>
 

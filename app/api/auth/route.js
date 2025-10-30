@@ -3,8 +3,10 @@ import { NextResponse } from "next/server"
 import jwt from "jsonwebtoken"
 import bcrypt from "bcryptjs"
 import { connectDB } from "@/lib/db"
+import { verifyAuth } from "@/lib/auth"
 import User from "@/models/User"
-export const runtime = "nodejs" // ✅ ensure Node APIs like mongoose work
+export const runtime = "nodejs"; // ✅ ensure Node APIs like mongoose work
+
 
 const JWT_SECRET = process.env.JWT_SECRET
 const TOKEN_EXPIRES_IN = process.env.JWT_EXPIRES_IN || "30d"
@@ -56,10 +58,14 @@ export async function POST(req) {
   // ---- REGISTER ----
   if (pathname.endsWith("register")) {
     if (!email || !password || !name)
-      return NextResponse.json({ success: false, message: "Please provide email, password, and name" }, { status: 400 })
+      return NextResponse.json(
+        { success: false, message: "Please provide email, password, and name" },
+        { status: 400 }
+      )
 
     const existing = await User.findOne({ email })
-    if (existing) return NextResponse.json({ success: false, message: "User already exists" }, { status: 400 })
+    if (existing)
+      return NextResponse.json({ success: false, message: "User already exists" }, { status: 400 })
 
     const hashed = await bcrypt.hash(password, 10)
     const user = await User.create({ email, password: hashed, name, role: role || "moderator" })
@@ -75,7 +81,8 @@ export async function POST(req) {
     const { currentPassword, newPassword } = body
     const token = req.cookies.get("token")?.value
 
-    if (!token) return NextResponse.json({ success: false, message: "Unauthorized" }, { status: 401 })
+    if (!token)
+      return NextResponse.json({ success: false, message: "Unauthorized" }, { status: 401 })
 
     try {
       const decoded = jwt.verify(token, JWT_SECRET)
@@ -118,5 +125,18 @@ export async function GET(req) {
     })
   } catch {
     return NextResponse.json({ success: false, message: "Invalid token" }, { status: 401 })
+  }
+}
+
+export async function POST(req) {
+  try {
+    const user = await verifyAuth(req) // throws if invalid
+    if (user.role !== "admin") {
+      return NextResponse.json({ success: false, message: "Access denied" }, { status: 403 })
+    }
+
+    // rest of your logic
+  } catch (error) {
+    return NextResponse.json({ success: false, message: error.message }, { status: 401 })
   }
 }
