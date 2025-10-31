@@ -17,11 +17,11 @@ function PlayerCard({ player }: { player: any }) {
   if (rating >= 1700 && rating < 2000)
     return "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200"; // 1700–1999
   if (rating >= 1400 && rating < 1700)
-    return "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200"; // 1400–1699
+    return "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200"; // 1400–1699
   if (rating >= 1100 && rating < 1400)
-    return "bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-200"; // 1100–1399
+    return "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200"; // 1100–1399
   if (rating >= 700 && rating < 1100)
-    return "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200"; // 700–1099
+    return "bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-200"; // 700–1099
   if (rating > 0 && rating < 700)
     return "bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-200"; // 0–699
   return "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"; // fallback
