@@ -1,4 +1,7 @@
-// app/api/tournaments/route.js
+// app/api/tournaments/route.
+export const dynamic = "force-dynamic";
+
+
 import { NextResponse } from "next/server"
 import Tournament from "@/models/Tournament"
 import { connectDB } from "@/lib/db"
