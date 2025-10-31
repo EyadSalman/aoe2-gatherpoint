@@ -1,4 +1,7 @@
 // app/api/maps/route.js
+export const dynamic = "force-dynamic";
+
+
 import { NextResponse } from "next/server";
 import Map from "@/models/Map";
 import { connectDB } from "@/lib/db";
