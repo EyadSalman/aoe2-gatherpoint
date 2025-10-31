@@ -1,0 +1,23 @@
+{
+  "buildCommand": "next build",
+  "env": {
+    "SKIP_ENV_VALIDATION": "true"
+  },
+  "routes": [
+    {
+      "src": "/api/maps",
+      "destination": "/api/maps",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
+    },
+    {
+      "src": "/api/players",
+      "destination": "/api/players",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
+    },
+    {
+      "src": "/api/tournaments",
+      "destination": "/api/tournaments",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
+    }
+  ]
+}
