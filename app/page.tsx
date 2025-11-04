@@ -23,7 +23,7 @@ const discordServers = [
   {
     name: "Practice Squad",
     description: "All the funky and chaotic stuff can be found here",
-    url: "https://discord.gg/SzUxGRK3Ez",
+    url: "https://discord.gg/VmjbTNyAkC",
     featured: true,
   },
   {
