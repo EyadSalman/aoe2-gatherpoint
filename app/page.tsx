@@ -168,7 +168,7 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Button size="lg" asChild className="bg-[#FF424D] hover:bg-[#FF424D]/90 text-white">
                     <a
-                      href="https://www.patreon.com/superhero55"
+                      href="https://www.patreon.com/Superhero55"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center"
