@@ -6,17 +6,17 @@
   "routes": [
     {
       "src": "/api/maps",
-      "destination": "/api/maps",
+      "dest": "/api/maps",
       "methods": ["GET", "POST", "PUT", "DELETE"]
     },
     {
       "src": "/api/players",
-      "destination": "/api/players",
+      "dest": "/api/players",
       "methods": ["GET", "POST", "PUT", "DELETE"]
     },
     {
       "src": "/api/tournaments",
-      "destination": "/api/tournaments",
+      "dest": "/api/tournaments",
       "methods": ["GET", "POST", "PUT", "DELETE"]
     }
   ]
