@@ -2251,6 +2251,7 @@ const sampleTournaments = [
     prizePool: { amount: 296.18, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: true,
     format: 'Round Robin',
     description: 'Second edition of Pick and Mixer with mixed maps and civs',
     featured: true,
@@ -2263,6 +2264,7 @@ const sampleTournaments = [
     prizePool: { amount: 636, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: true,
     format: 'Double Elimination',
     description: 'Fast-paced Stronghold tournament, back for season 2',
     featured: false,
@@ -2275,6 +2277,7 @@ const sampleTournaments = [
     prizePool: { amount: 59, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: true,
     format: 'Round Robin',
     description: 'The 14th season of AoeLeagues featuring top players',
     featured: true,
@@ -2287,6 +2290,7 @@ const sampleTournaments = [
     prizePool: { amount: 160, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: false,
     format: 'Round Robin',
     description: 'The 8th season of the Alchemy League.',
     featured: false,
@@ -2301,6 +2305,7 @@ const sampleTournaments = [
     registrationDeadline: new Date('2025-10-31'),
     registrationLink: 'https://discord.com/invite/Wz57XRkmQh',
     type: 'Community',
+    playoffsStarted: false,
     format: 'Round Robin',
     description: 'Eight edition of the 7Ps League for piss poor performance players',
     featured: false,
@@ -2331,6 +2336,20 @@ const sampleTournaments = [
     type: 'Community',
     format: 'Round Robin',
     description: 'New T90 community event with sudden death settings',
+    featured: false,
+    isActive: true
+  },
+  {
+    name: 'Super Idiot Cup 3',
+    organizer: 'ThisDino',
+    date: new Date('2025-11-10'),
+    prizePool: { amount: 0, currency: 'USD' },
+    status: 'registration', // upcoming
+    registrationDeadline: new Date('2025-11-09'),
+    registrationLink: 'https://discord.gg/JH45NZTmT4',
+    type: 'Community',
+    format: 'Round Robin',
+    description: 'Anything can happen to you. Exploding Vills, Dodgeball, Cheat Codes and more',
     featured: false,
     isActive: true
   },
