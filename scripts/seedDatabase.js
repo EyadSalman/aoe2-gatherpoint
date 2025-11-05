@@ -2358,6 +2358,7 @@ const sampleTournaments = [
 const sampleLeaderboard = [
   {
     name: "Arabia Lovers 2",
+    organizer: "ThisDino",
     date: "2025-10-25",
     winners: [
       { division: "Division 1", player: "Breakfast", rating: null },
