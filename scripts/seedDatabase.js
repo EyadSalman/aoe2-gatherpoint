@@ -2251,6 +2251,7 @@ const sampleTournaments = [
     prizePool: { amount: 296.18, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: true,
     format: 'Round Robin',
     description: 'Second edition of Pick and Mixer with mixed maps and civs',
     featured: true,
@@ -2263,6 +2264,7 @@ const sampleTournaments = [
     prizePool: { amount: 636, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: true,
     format: 'Double Elimination',
     description: 'Fast-paced Stronghold tournament, back for season 2',
     featured: false,
@@ -2275,6 +2277,7 @@ const sampleTournaments = [
     prizePool: { amount: 59, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: true,
     format: 'Round Robin',
     description: 'The 14th season of AoeLeagues featuring top players',
     featured: true,
@@ -2287,6 +2290,7 @@ const sampleTournaments = [
     prizePool: { amount: 160, currency: 'USD' },
     status: 'ongoing', // current
     type: 'Community',
+    playoffsStarted: false,
     format: 'Round Robin',
     description: 'The 8th season of the Alchemy League.',
     featured: false,
@@ -2301,6 +2305,7 @@ const sampleTournaments = [
     registrationDeadline: new Date('2025-10-31'),
     registrationLink: 'https://discord.com/invite/Wz57XRkmQh',
     type: 'Community',
+    playoffsStarted: false,
     format: 'Round Robin',
     description: 'Eight edition of the 7Ps League for piss poor performance players',
     featured: false,
