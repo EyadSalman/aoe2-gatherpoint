@@ -2297,7 +2297,7 @@ const sampleTournaments = [
     organizer: 'Zark',
     date: new Date('2025-11-02'),
     prizePool: { amount: 0, currency: 'USD' },
-    status: 'registration', // upcoming
+    status: 'ongoing', // upcoming
     registrationDeadline: new Date('2025-10-31'),
     registrationLink: 'https://discord.com/invite/Wz57XRkmQh',
     type: 'Community',
@@ -2320,6 +2320,20 @@ const sampleTournaments = [
     featured: false,
     isActive: true
   },
+  {
+    name: 'T90 Sudden Death Cup',
+    organizer: 'Rbase',
+    date: new Date('2025-11-24'),
+    prizePool: { amount: 0, currency: 'USD' },
+    status: 'registration', // upcoming
+    registrationDeadline: new Date('2025-11-21'),
+    registrationLink: 'https://discord.com/invite/vMpPuPjba8',
+    type: 'Community',
+    format: 'Round Robin',
+    description: 'At the end of each round, winners move up, losers move down. This dynamic "ping-pong" system ensures increasingly balanced matchups week after week.',
+    featured: false,
+    isActive: true
+  },
 ];
 
 const sampleLeaderboard = [
@@ -2331,12 +2345,14 @@ const sampleLeaderboard = [
       { division: "Division 2", player: "LilyBear", rating: null },
       { division: "Division 3", player: "xRavyn", rating: null },
       { division: "Division 4", player: "ThisDino", rating: null },
+      { division: "Division 5", player: "Amo", rating: null },
     ],
     runnerUps: [
       { division: "Division 1", player: "kataphraktos", rating: null },
       { division: "Division 2", player: "BigTastyBacon", rating: null },
       { division: "Division 3", player: "JawolopingChris", rating: null },
       { division: "Division 4", player: "Flying Mouse", rating: null },
+      { division: "Division 5", player: "Abigaille", rating: null },
     ],
     isActive: true,
   },
