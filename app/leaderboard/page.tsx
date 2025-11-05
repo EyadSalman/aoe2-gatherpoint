@@ -15,6 +15,7 @@ type DivisionResult = {
 type TournamentResult = {
   name: string
   date: string
+  organizer: string
   winners: DivisionResult[]
   runnerUps: DivisionResult[]
 }
@@ -73,11 +74,17 @@ export default function LeaderboardPage() {
                 <div className="bg-gradient-to-r from-accent/10 to-accent/5 border-b border-accent/20">
                   <CardHeader>
                     <div className="flex items-center justify-between">
-                      <div>
+                                            <div>
                         <CardTitle className="text-2xl">{tournament.name}</CardTitle>
-                        <CardDescription className="flex items-center gap-2 mt-2">
-                          <Calendar className="h-4 w-4" />
-                          {tournament.date}
+                        <CardDescription className="flex flex-wrap items-center gap-3 mt-2 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-1">
+                            <Crown className="h-4 w-4" />
+                            <span>{tournament.organizer}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Calendar className="h-4 w-4" />
+                            <span>{tournament.date}</span>
+                          </div>
                         </CardDescription>
                       </div>
                       <div className="hidden sm:block">
