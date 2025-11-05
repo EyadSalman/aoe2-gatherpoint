@@ -2339,6 +2339,20 @@ const sampleTournaments = [
     featured: false,
     isActive: true
   },
+  {
+    name: 'Super Idiot Cup 3',
+    organizer: 'ThisDino',
+    date: new Date('2025-11-10'),
+    prizePool: { amount: 0, currency: 'USD' },
+    status: 'registration', // upcoming
+    registrationDeadline: new Date('2025-11-09'),
+    registrationLink: 'https://discord.gg/JH45NZTmT4',
+    type: 'Community',
+    format: 'Round Robin',
+    description: 'Anything can happen to you. Exploding Vills, Dodgeball, Cheat Codes and more',
+    featured: false,
+    isActive: true
+  },
 ];
 
 const sampleLeaderboard = [
