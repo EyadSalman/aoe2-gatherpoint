@@ -2252,7 +2252,7 @@ const sampleTournaments = [
     status: 'ongoing', // current
     type: 'Community',
     format: 'Round Robin',
-    description: 'Second edition of Pick and Mixer with mixed maps and civs.',
+    description: 'Second edition of Pick and Mixer with mixed maps and civs',
     featured: true,
     isActive: true
   },
@@ -2264,7 +2264,7 @@ const sampleTournaments = [
     status: 'ongoing', // current
     type: 'Community',
     format: 'Double Elimination',
-    description: 'Fast-paced Stronghold tournament, back for season 2.',
+    description: 'Fast-paced Stronghold tournament, back for season 2',
     featured: false,
     isActive: true
   },
@@ -2276,7 +2276,7 @@ const sampleTournaments = [
     status: 'ongoing', // current
     type: 'Community',
     format: 'Round Robin',
-    description: 'The 14th season of AoeLeagues featuring top players.',
+    description: 'The 14th season of AoeLeagues featuring top players',
     featured: true,
     isActive: true
   },
@@ -2316,7 +2316,7 @@ const sampleTournaments = [
     registrationLink: 'https://discord.com/invite/bUgV2saKUN',
     type: 'Community',
     format: 'Round Robin',
-    description: 'At the end of each round, winners move up, losers move down. This dynamic "ping-pong" system ensures increasingly balanced matchups week after week.',
+    description: 'At the end of each round, winners move up, losers move down. This dynamic "ping-pong" system ensures increasingly balanced matchups week after week',
     featured: false,
     isActive: true
   },
@@ -2330,7 +2330,7 @@ const sampleTournaments = [
     registrationLink: 'https://discord.com/invite/vMpPuPjba8',
     type: 'Community',
     format: 'Round Robin',
-    description: 'At the end of each round, winners move up, losers move down. This dynamic "ping-pong" system ensures increasingly balanced matchups week after week.',
+    description: 'New T90 community event with sudden death settings',
     featured: false,
     isActive: true
   },
@@ -2346,6 +2346,9 @@ const sampleLeaderboard = [
       { division: "Division 3", player: "xRavyn", rating: null },
       { division: "Division 4", player: "ThisDino", rating: null },
       { division: "Division 5", player: "Amo", rating: null },
+      { division: "Division 6", player: "Lucky23", rating: null },
+      { division: "Division 7", player: "Satellites of Heaven", rating: null },
+      { division: "Division 8", player: "GoldRoger", rating: null },
     ],
     runnerUps: [
       { division: "Division 1", player: "kataphraktos", rating: null },
@@ -2353,6 +2356,9 @@ const sampleLeaderboard = [
       { division: "Division 3", player: "JawolopingChris", rating: null },
       { division: "Division 4", player: "Flying Mouse", rating: null },
       { division: "Division 5", player: "Abigaille", rating: null },
+      { division: "Division 6", player: "Chipmunk", rating: null },
+      { division: "Division 7", player: "rOb", rating: null },
+      { division: "Division 8", player: "El Renegado", rating: null },
     ],
     isActive: true,
   },
