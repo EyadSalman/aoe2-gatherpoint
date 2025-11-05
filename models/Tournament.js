@@ -52,6 +52,10 @@ const tournamentSchema = new mongoose.Schema({
     enum: ['Professional', 'Community'],
     required: [true, 'Tournament type is required']
   },
+  playoffsStarted: {
+    type: Boolean,
+    default: false,
+  },
   format: {
     type: String,
     enum: ['Single Elimination', 'Double Elimination', 'Round Robin', 'Swiss'],
