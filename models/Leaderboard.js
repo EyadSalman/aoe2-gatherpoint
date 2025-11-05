@@ -16,6 +16,7 @@ const runnerupSchema = new mongoose.Schema({
 const leaderboardSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
+    organizer: { type: String, required: true },
     date: { type: String, required: true },
     winners: [winnerSchema],
     runnerUps: [runnerupSchema],
