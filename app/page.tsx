@@ -141,9 +141,8 @@ export default function HomePage() {
                   <CardTitle className="text-2xl font-bold">Support the Community</CardTitle>
                 </div>
                 <CardDescription className="text-lg text-pretty">
-                  Help <span className="font-semibold text-foreground">superhero55</span> continue building amazing
-                  tools and content for the Age of Empires 2 community. Your support helps maintain servers, develop new
-                  features, and create valuable content for players worldwide.
+                  Help <span className="font-semibold text-foreground">superhero55</span> continue building tools for the Age of Empires II community by supporting him on Patreon 
+                  so he can keep paying his internet bills.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -154,9 +153,9 @@ export default function HomePage() {
                     <div className="text-xs text-muted-foreground mt-1">New features & improvements</div>
                   </div>
                   <div className="text-center p-4 rounded-lg bg-background/50">
-                    <div className="text-2xl font-bold text-primary">🎥</div>
-                    <div className="text-sm font-medium mt-2">Content Creation</div>
-                    <div className="text-xs text-muted-foreground mt-1">Tutorials & guides</div>
+                    <div className="text-2xl font-bold text-primary">📊</div>
+                    <div className="text-sm font-medium mt-2">Analytics & Stats</div>
+                    <div className="text-xs text-muted-foreground mt-1">Player data & insights</div>
                   </div>
                   <div className="text-center p-4 rounded-lg bg-background/50">
                     <div className="text-2xl font-bold text-primary">⚡</div>
@@ -178,7 +177,7 @@ export default function HomePage() {
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
-                  <div className="text-sm text-muted-foreground">Every contribution helps! ❤️</div>
+                  <div className="text-sm text-muted-foreground"></div>
                 </div>
               </CardContent>
             </Card>
