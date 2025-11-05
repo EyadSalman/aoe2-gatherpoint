@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Calendar, Trophy,Banknote, Clock, ExternalLink } from "lucide-react"
+import { Calendar, Trophy, Banknote, Clock, ExternalLink, Loader2 } from "lucide-react"
 
 function TournamentCard({ tournament }: { tournament: any }) {
   const getStatusColor = (status: string) => {
@@ -45,64 +45,54 @@ function TournamentCard({ tournament }: { tournament: any }) {
         </div>
       </CardHeader>
       <CardContent>
-    <div className="grid grid-cols-2 gap-4 text-sm">
-      {/* 🗓️ Start Date */}
-      <div className="flex items-center gap-2">
-        <Calendar className="h-4 w-4 text-muted-foreground" />
-        <span>
-          Begins: {new Date(tournament.date).toLocaleDateString()}
-        </span>
-      </div>
+        <div className="grid grid-cols-2 gap-4 text-sm">
+          {/* 🗓️ Start Date */}
+          <div className="flex items-center gap-2">
+            <Calendar className="h-4 w-4 text-muted-foreground" />
+            <span>Begins: {new Date(tournament.date).toLocaleDateString()}</span>
+          </div>
 
-    {/* 💰 Prize Pool */}
-    <div className="flex items-center gap-2">
-      <Banknote className="h-4 w-4 text-muted-foreground" />
-      <span>${tournament.prizePool.amount.toLocaleString()}</span>
-    </div>
+          {/* 💰 Prize Pool */}
+          <div className="flex items-center gap-2">
+            <Banknote className="h-4 w-4 text-muted-foreground" />
+            <span>${tournament.prizePool.amount.toLocaleString()}</span>
+          </div>
 
-    {/* 🏆 Format */}
-    <div className="flex items-center gap-2">
-      <Trophy className="h-4 w-4 text-muted-foreground" />
-      <span>{tournament.format}</span>
-    </div>
+          {/* 🏆 Format */}
+          <div className="flex items-center gap-2">
+            <Trophy className="h-4 w-4 text-muted-foreground" />
+            <span>{tournament.format}</span>
+          </div>
 
-    {/* ⏰ Dynamic Info */}
-    <div className="flex items-center gap-2">
-      <Clock className="h-4 w-4 text-muted-foreground" />
-      <span>
-        {tournament.status === "ongoing" ? (
-          `Playoffs started: ${tournament.playoffsStarted ? "Yes" : "No"}`
-        ) : tournament.status === "registration" || tournament.status === "announced" ? (
-          tournament.registrationDeadline ? (
-            `Deadline: ${new Date(tournament.registrationDeadline).toLocaleDateString()}`
-          ) : (
-            "Deadline: TBD"
-          )
-        ) : tournament.status === "completed" ? (
-          "Tournament Completed"
-        ) : (
-          "Coming Soon"
+          {/* ⏰ Dynamic Info */}
+          <div className="flex items-center gap-2">
+            <Clock className="h-4 w-4 text-muted-foreground" />
+            <span>
+              {tournament.status === "ongoing"
+                ? `Playoffs started: ${tournament.playoffsStarted ? "Yes" : "No"}`
+                : tournament.status === "registration" || tournament.status === "announced"
+                ? tournament.registrationDeadline
+                  ? `Deadline: ${new Date(tournament.registrationDeadline).toLocaleDateString()}`
+                  : "Deadline: TBD"
+                : tournament.status === "completed"
+                ? "Tournament Completed"
+                : "Coming Soon"}
+            </span>
+          </div>
+        </div>
+
+        {/* 📝 Registration Button */}
+        {tournament.status === "registration" && tournament.registrationLink && (
+          <div className="mt-4">
+            <Button className="w-full" asChild>
+              <a href={tournament.registrationLink} target="_blank" rel="noopener noreferrer">
+                Register Now
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </div>
         )}
-      </span>
-    </div>
-  </div>
-
-  {/* 📝 Registration Button */}
-  {tournament.status === "registration" && tournament.registrationLink && (
-    <div className="mt-4">
-      <Button className="w-full" asChild>
-        <a
-          href={tournament.registrationLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Register Now
-          <ExternalLink className="ml-2 h-4 w-4" />
-        </a>
-      </Button>
-    </div>
-  )}
-</CardContent>
+      </CardContent>
     </Card>
   )
 }
@@ -110,6 +100,7 @@ function TournamentCard({ tournament }: { tournament: any }) {
 export default function TournamentsPage() {
   const [currentTournaments, setCurrentTournaments] = useState<any[]>([])
   const [upcomingTournaments, setUpcomingTournaments] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
 
   // ✅ Fetch tournaments (ongoing & registration)
   useEffect(() => {
@@ -118,20 +109,22 @@ export default function TournamentsPage() {
         const [ongoingRes, registrationRes] = await Promise.all([
           fetch("/api/tournaments?status=ongoing"),
           fetch("/api/tournaments?status=registration"),
-        ]);
+        ])
 
-        const ongoingData = await ongoingRes.json();
-        const registrationData = await registrationRes.json();
+        const ongoingData = await ongoingRes.json()
+        const registrationData = await registrationRes.json()
 
-        setCurrentTournaments(ongoingData.data || []);
-        setUpcomingTournaments(registrationData.data || []);
+        setCurrentTournaments(ongoingData.data || [])
+        setUpcomingTournaments(registrationData.data || [])
       } catch (err) {
-        console.error("Error fetching tournaments:", err);
+        console.error("Error fetching tournaments:", err)
+      } finally {
+        setLoading(false)
       }
-    };
+    }
 
-    fetchTournaments();
-  }, []);
+    fetchTournaments()
+  }, [])
 
   return (
     <div className="min-h-screen bg-background">
@@ -150,21 +143,43 @@ export default function TournamentsPage() {
             <TabsTrigger value="upcoming">Upcoming Tournaments</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="current" className="mt-6">
-            <div className="grid gap-6 md:grid-cols-2">
-              {currentTournaments.map(t => (
-                <TournamentCard key={t._id} tournament={t} />
-              ))}
+          {/* 🟢 Loading State */}
+          {loading ? (
+            <div className="flex flex-col items-center justify-center py-16">
+              <Loader2 className="h-8 w-8 animate-spin text-accent mb-4" />
+              <p className="text-muted-foreground">Loading tournaments...</p>
             </div>
-          </TabsContent>
+          ) : (
+            <>
+              <TabsContent value="current" className="mt-6">
+                {currentTournaments.length === 0 ? (
+                  <p className="text-muted-foreground text-center py-8">
+                    No current tournaments found.
+                  </p>
+                ) : (
+                  <div className="grid gap-6 md:grid-cols-2">
+                    {currentTournaments.map((t) => (
+                      <TournamentCard key={t._id} tournament={t} />
+                    ))}
+                  </div>
+                )}
+              </TabsContent>
 
-          <TabsContent value="upcoming" className="mt-6">
-            <div className="grid gap-6 md:grid-cols-2">
-              {upcomingTournaments.map(t => (
-                <TournamentCard key={t._id} tournament={t} />
-              ))}
-            </div>
-          </TabsContent>
+              <TabsContent value="upcoming" className="mt-6">
+                {upcomingTournaments.length === 0 ? (
+                  <p className="text-muted-foreground text-center py-8">
+                    No upcoming tournaments found.
+                  </p>
+                ) : (
+                  <div className="grid gap-6 md:grid-cols-2">
+                    {upcomingTournaments.map((t) => (
+                      <TournamentCard key={t._id} tournament={t} />
+                    ))}
+                  </div>
+                )}
+              </TabsContent>
+            </>
+          )}
         </Tabs>
       </div>
     </div>
