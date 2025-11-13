@@ -28,7 +28,7 @@ type MapType = {
   strategies: string[];
   tournaments: string[];
   features: string[];
-  bestCivilizations?: string[];
+  bestCivs?: string[];
 };
 
 
@@ -148,9 +148,9 @@ function MapCard({ map }: { map: MapType }) {
               <TabsContent value="civs" className="mt-6 space-y-4">
                 <div>
                   <h4 className="font-medium mb-3">Best Civilizations</h4>
-                  {map.bestCivilizations?.length ? (
+                  {map.bestCivs?.length ? (
                     <div className="flex flex-wrap gap-2">
-                      {map.bestCivilizations.map((civ) => (
+                      {map.bestCivs.map((civ) => (
                         <Badge key={civ} variant="secondary">
                           {civ}
                         </Badge>
@@ -167,7 +167,7 @@ function MapCard({ map }: { map: MapType }) {
               {/* Tournaments */}
               <TabsContent value="tournaments" className="mt-6 space-y-4">
                 <div>
-                  <h4 className="font-medium mb-3">Featured in Tournaments</h4>
+                  <h4 className="font-medium mb-3">Recent Tournaments</h4>
                   {map.tournaments?.length ? (
                     <div className="space-y-2">
                       {map.tournaments.map((tournament) => (
