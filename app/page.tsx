@@ -10,7 +10,7 @@ import Link from "next/link"
 const discordServers = [
   {
     name: "AoeLeagues",
-    description: "Hosts a competitive league where players choose their own home maps.",
+    description: "Hosts a competitive league where players choose their own home maps every new season.",
     url: "https://discord.gg/5dkUe5xtzq",
     featured: true,
   },
@@ -90,7 +90,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-balance">Join Community Tournaments</h2>
             <p className="mt-4 text-lg text-muted-foreground text-pretty">
-              Connect with the most active Age of Empires 2 tournament Discord servers
+              Connect with the most active Age of Empires 2 tournament Discord servers for community tournaments
             </p>
           </div>
 
@@ -146,24 +146,6 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid gap-4 md:grid-cols-3">
-                  <div className="text-center p-4 rounded-lg bg-background/50">
-                    <div className="text-2xl font-bold text-primary">🛠️</div>
-                    <div className="text-sm font-medium mt-2">Tool Development</div>
-                    <div className="text-xs text-muted-foreground mt-1">New features & improvements</div>
-                  </div>
-                  <div className="text-center p-4 rounded-lg bg-background/50">
-                    <div className="text-2xl font-bold text-primary">📊</div>
-                    <div className="text-sm font-medium mt-2">Analytics & Stats</div>
-                    <div className="text-xs text-muted-foreground mt-1">Player data & insights</div>
-                  </div>
-                  <div className="text-center p-4 rounded-lg bg-background/50">
-                    <div className="text-2xl font-bold text-primary">⚡</div>
-                    <div className="text-sm font-medium mt-2">Server Costs</div>
-                    <div className="text-xs text-muted-foreground mt-1">Keeping everything running</div>
-                  </div>
-                </div>
-
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Button size="lg" asChild className="bg-[#FF424D] hover:bg-[#FF424D]/90 text-white">
                     <a

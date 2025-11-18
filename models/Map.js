@@ -22,10 +22,9 @@ const mapSchema = new mongoose.Schema({
     required: [true, 'Map description is required'],
     maxlength: [500, 'Description cannot exceed 500 characters']
   },
-  bestCivilizations: [{
-    name: String,
-    reasoning: String
-  }],
+  bestCivs: {
+    type: [String], // ✅ Keep as array of strings
+  },
   strategies: [String],
   tournaments: [String],
   features: [String],
@@ -38,11 +37,6 @@ const mapSchema = new mongoose.Schema({
       civilization: String,
       rate: Number
     }]
-  },
-  difficulty: {
-    type: String,
-    enum: ['Beginner', 'Intermediate', 'Advanced', 'Expert'],
-    default: 'Intermediate'
   },
   isActive: {
     type: Boolean,

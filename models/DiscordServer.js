@@ -1,4 +1,4 @@
-// models/DiscordServer.
+// models/DiscordServer.js
 import mongoose from "mongoose";
 
 const discordServerSchema = new mongoose.Schema({
