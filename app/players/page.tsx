@@ -70,7 +70,7 @@ function PlayerCard({ player }: { player: any }) {
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs font-medium text-muted-foreground text-center leading-tight">Win Rate</span>
             <Badge className={`${playerColor} font-mono font-semibold text-sm px-2 py-1`}>
-              {player.winRate ? `${player.winRate}%` : "N/A"}
+              {player.winRate ? `${player.winRate}` : "N/A"}
             </Badge>
           </div>
         </div>
