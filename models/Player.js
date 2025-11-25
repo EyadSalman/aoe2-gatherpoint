@@ -1,130 +1,150 @@
-// models/Player.js
 import mongoose from "mongoose";
 
-const playerSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: [true, 'Player name is required'],
-    unique: true,
-    trim: true,
-    maxlength: [50, 'Player name cannot exceed 50 characters']
-  },
+const playerSchema = new mongoose.Schema(
+  {
+    // Unique identifier from AoE2Insights URL (/user/12345)
+    aoe2InsightsId: {
+      type: String,
+      required: true,
+      unique: true
+    },
 
-  country: {
-    type: String,
-    required: [true, 'Country is required'],
-    trim: true
-  },
+    name: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 50
+    },
 
-  // ⭐ CURRENT RATING (Live Rating)
-  currentRating: {
-    type: Number,
-    default: 1000,
-    min: [0, 'Current rating cannot be negative'],
-    max: [5000, 'Current rating cannot exceed 5000']
-  },
+    country: {
+      type: String,
+      required: true,
+      trim: true
+    },
 
-  // ⭐ PEAK RATING (All-time high)
-  peakRating: {
-    type: Number,
-    default: 1000,
-    min: [0, 'Peak rating cannot be negative'],
-    max: [5000, 'Peak rating cannot exceed 5000']
-  },
+    // ⭐ Live rating
+    currentRating: {
+      type: Number,
+      default: null,
+      min: 0,
+      max: 5000
+    },
 
-  // (Optional) Keep original rating field if used in UI
-  rating: {
-    type: Number,
-    default: 1000,
-    min: [0, 'Rating cannot be negative'],
-    max: [5000, 'Rating cannot exceed 5000']
-  },
+    // ⭐ All-time high rating
+    peakRating: {
+      type: Number,
+      default: null,
+      min: 0,
+      max: 5000
+    },
 
-  rank: {
-    type: Number,
-    min: [1, 'Rank must be at least 1']
-  },
+    // Legacy compatibility (your UI uses this)
+    rating: {
+      type: Number,
+      default: null,
+      min: 0,
+      max: 5000
+    },
 
-  avatar: {
-    type: String,
-    default: ''
-  },
-
-  statistics: {
-    tournaments: { type: Number, default: 0 },
-    wins: { type: Number, default: 0 },
-    losses: { type: Number, default: 0 },
-    totalEarnings: {
+    // ⭐ % win rate (0–100)
+    winRate: {
       type: Number,
       default: 0,
-      min: [0, 'Earnings cannot be negative']
+      min: 0,
+      max: 100
+    },
+
+    rank: {
+      type: Number,
+      min: 1
+    },
+
+    avatar: {
+      type: String,
+      default: ""
+    },
+
+    statistics: {
+      tournaments: { type: Number, default: 0 },
+      wins: { type: Number, default: 0 },
+      losses: { type: Number, default: 0 },
+      totalEarnings: { type: Number, default: 0, min: 0 }
+    },
+
+    recentForm: [
+      {
+        type: Number,
+        enum: [0, 1] // loss = 0, win = 1
+      }
+    ],
+
+    achievements: [String],
+    favoriteMap: String,
+    mainCivilizations: [String],
+
+    socialLinks: {
+      twitch: String,
+      youtube: String,
+      twitter: String,
+      steam: String
+    },
+
+    profileUrl: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    // ⭐ Required for your API .find({ isActive: true })
+    isActive: {
+      type: Boolean,
+      default: true
+    },
+
+    // ⭐ Auto-tracking of when scraper updated this record
+    lastUpdated: {
+      type: Date,
+      default: Date.now
     }
   },
+  {
+    timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true }
+  }
+);
 
-  winRate: {
-  type: String,
-  default: "0%"
-},
-
-  recentForm: [{
-    type: Number,
-    enum: [0, 1] // 0 = loss, 1 = win
-  }],
-
-  achievements: [String],
-  favoriteMap: String,
-  mainCivilizations: [String],
-
-  socialLinks: {
-    twitch: String,
-    youtube: String,
-    twitter: String,
-    steam: String
-  },
-
-  profileUrl: {
-    type: String,
-    trim: true,
-    validate: {
-      validator: function (v) {
-        return !v || /^https?:\/\/.+/.test(v);
-      },
-      message: "Invalid profile URL format",
-    },
-  },
-
-  isActive: {
-    type: Boolean,
-    default: true
-  },
-}, {
-  timestamps: true,
-  toJSON: { virtuals: true },
-  toObject: { virtuals: true }
-});
-
-// ⭐ Indexes
+// -----------------------------------------------------
+// ⭐ Indexes for fast leaderboard sorting/filtering
+// -----------------------------------------------------
 playerSchema.index({ currentRating: -1 });
 playerSchema.index({ peakRating: -1 });
 playerSchema.index({ rating: -1 });
 playerSchema.index({ rank: 1 });
 playerSchema.index({ country: 1 });
-playerSchema.index({ name: 'text' });
+playerSchema.index({ name: "text" });
+playerSchema.index({ aoe2InsightsId: 1 });
 
-// ⭐ Virtual earnings formatter
-playerSchema.virtual('formattedEarnings').get(function () {
+// -----------------------------------------------------
+// ⭐ Virtual: formatted earnings
+// -----------------------------------------------------
+playerSchema.virtual("formattedEarnings").get(function () {
   return `$${this.statistics.totalEarnings.toLocaleString()}`;
 });
 
-// ⭐ Auto-calc win rate
-playerSchema.pre('save', function (next) {
+// -----------------------------------------------------
+// ⭐ Auto-calc win rate (if wins/losses exist)
+// -----------------------------------------------------
+playerSchema.pre("save", function (next) {
   const totalGames = this.statistics.wins + this.statistics.losses;
   if (totalGames > 0) {
-    this.statistics.winRate = Math.round((this.statistics.wins / totalGames) * 100);
+    this.winRate = Math.round((this.statistics.wins / totalGames) * 100);
   }
   next();
 });
 
-// ⭐ Safe model export
-const Player = mongoose.models?.Player || mongoose.model("Player", playerSchema);
+// For Next.js hot reload issue
+const Player =
+  mongoose.models?.Player || mongoose.model("Player", playerSchema);
+
 export default Player;
