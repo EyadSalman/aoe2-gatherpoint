@@ -17,14 +17,14 @@ console.log("🌱 Starting database seeding...");
 // Connect to database
 
 const samplePlayers = [
-  {
-    "name": "Addictiveme",
-    "country": "Ireland",
-    "rating": 1537.0,
-    "profileUrl": "https://www.aoe2insights.com/user/2158159",
-    "isActive": true,
-    "peakRating": 1537.0,
-    "winRate": "51%"
+  { "name": "Addictiveme", 
+    "country": "Ireland", 
+    "rating": 1537.0, 
+    "profileUrl": "https://www.aoe2insights.com/user/2158159", 
+    "isActive": true, 
+    "peakRating": 1537.0, 
+    "winRate": "51%", 
+    "recentTournamentsPlayed": [ "T90 Community Cup 2"]
   },
   {
     "name": "Adthor",
@@ -33,7 +33,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13054248",
     "isActive": true,
     "peakRating": 971.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Airbudgoldenrec",
@@ -42,7 +43,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11683000",
     "isActive": true,
     "peakRating": 1168.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Akkal",
@@ -51,7 +53,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/277869",
     "isActive": true,
     "peakRating": 1428.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Alepsi",
@@ -60,7 +63,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5791522",
     "isActive": true,
     "peakRating": 1386.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "AlexDonat",
@@ -69,7 +73,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/8669401",
     "isActive": true,
     "peakRating": 1407.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Alpha krit",
@@ -78,7 +83,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9934717",
     "isActive": true,
     "peakRating": 1423.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "amon",
@@ -87,7 +93,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/233750",
     "isActive": true,
     "peakRating": 1707.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Amokura",
@@ -96,7 +103,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11765693",
     "isActive": true,
     "peakRating": 1608.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Apostic",
@@ -105,7 +113,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4510278",
     "isActive": true,
     "peakRating": 1158.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "arwhal",
@@ -114,7 +123,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10903621",
     "isActive": true,
     "peakRating": 1446.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ashoof",
@@ -123,7 +133,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13117300",
     "isActive": true,
     "peakRating": 1002.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "avlid",
@@ -132,7 +143,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/254645",
     "isActive": true,
     "peakRating": 2104.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Beargwyn",
@@ -141,7 +153,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6859687",
     "isActive": true,
     "peakRating": 1264.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "Bender",
@@ -150,7 +163,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12517895",
     "isActive": true,
     "peakRating": 1822.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Bishop",
@@ -159,7 +173,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/950113",
     "isActive": true,
     "peakRating": 1121.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Black Lotus",
@@ -168,7 +183,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/941790",
     "isActive": true,
     "peakRating": 1817.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Bloomd",
@@ -177,7 +193,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2239994",
     "isActive": true,
     "peakRating": 1860.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "BloodForTheSkyGod",
@@ -186,7 +203,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2363846",
     "isActive": true,
     "peakRating": 1702.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "BoesBoes",
@@ -195,7 +213,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2010525",
     "isActive": true,
     "peakRating": 1460.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Boarderdudeman",
@@ -204,7 +223,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/237994",
     "isActive": true,
     "peakRating": 1568.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Breakfast",
@@ -213,7 +233,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4851630",
     "isActive": true,
     "peakRating": 2129.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Brydazi",
@@ -222,7 +243,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12783556",
     "isActive": true,
     "peakRating": 1117.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Bumbaloe",
@@ -231,7 +253,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1722912",
     "isActive": true,
     "peakRating": 1082.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Canttouchme",
@@ -240,7 +263,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1965270",
     "isActive": true,
     "peakRating": 1397.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Charlies Alpaca",
@@ -249,7 +273,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5553104",
     "isActive": true,
     "peakRating": 1124.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "CheesecakeMasta",
@@ -258,7 +283,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/293313",
     "isActive": true,
     "peakRating": 1642.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Chelbird",
@@ -267,7 +293,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2543478",
     "isActive": true,
     "peakRating": 1785.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Chipmunk",
@@ -276,7 +303,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/282529",
     "isActive": true,
     "peakRating": 1466.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Clarky0202",
@@ -285,7 +313,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/697097",
     "isActive": true,
     "peakRating": 1270.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "CoalTrain",
@@ -294,7 +323,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1720213",
     "isActive": true,
     "peakRating": 1700.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Code Name Raven",
@@ -303,7 +333,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/402345",
     "isActive": true,
     "peakRating": 1317.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Comfrick",
@@ -312,7 +343,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6368551",
     "isActive": true,
     "peakRating": 1796.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Cosminb",
@@ -321,7 +353,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4285252",
     "isActive": true,
     "peakRating": 1391.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Cu5T05",
@@ -330,7 +363,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/792014",
     "isActive": true,
     "peakRating": 1058.0,
-    "winRate": "41%"
+    "winRate": "41%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Cyvarios",
@@ -339,7 +373,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9058532",
     "isActive": true,
     "peakRating": 1505.0,
-    "winRate": "61%"
+    "winRate": "61%",
+    "recentTournamentsPlayed": ["7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "DaSwedishBeast",
@@ -348,7 +383,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2479744",
     "isActive": true,
     "peakRating": 1084.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Dashermin",
@@ -357,7 +393,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6073178",
     "isActive": true,
     "peakRating": 1289.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Dasein",
@@ -366,7 +403,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/312182",
     "isActive": true,
     "peakRating": 1124.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Dawn",
@@ -375,7 +413,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12202531",
     "isActive": true,
     "peakRating": 1630.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Dhruv47",
@@ -384,7 +423,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10510225",
     "isActive": true,
     "peakRating": 911.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Dio_roja",
@@ -393,7 +433,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2439151",
     "isActive": true,
     "peakRating": 1655.0,
-    "winRate": "62%"
+    "winRate": "62%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Dodo3011",
@@ -402,7 +443,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12559976",
     "isActive": true,
     "peakRating": 1653.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "DomHUSK",
@@ -411,7 +453,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3306988",
     "isActive": true,
     "peakRating": 1465.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Dracarna",
@@ -420,7 +463,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1394115",
     "isActive": true,
     "peakRating": 1064.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "DrLoops",
@@ -429,7 +473,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3903933",
     "isActive": true,
     "peakRating": 1913.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Duhak.Natria",
@@ -438,7 +483,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13060828",
     "isActive": true,
     "peakRating": 1420.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Eden",
@@ -447,7 +493,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12592487",
     "isActive": true,
     "peakRating": 1673.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "El CivettaDiTozzi",
@@ -456,7 +503,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/229416",
     "isActive": true,
     "peakRating": 1421.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "El Latigo",
@@ -465,7 +513,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2770291",
     "isActive": true,
     "peakRating": 1234.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "El Mikalos",
@@ -474,7 +523,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12594426",
     "isActive": true,
     "peakRating": 1429.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "EmperorNoob97",
@@ -483,7 +533,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5422400",
     "isActive": true,
     "peakRating": 1071.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Emp. Peter",
@@ -492,7 +543,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2558975",
     "isActive": true,
     "peakRating": 1285.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Enki",
@@ -501,7 +553,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1639985",
     "isActive": true,
     "peakRating": 951.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "EnnoVonDerTanke",
@@ -510,7 +563,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9649575",
     "isActive": true,
     "peakRating": 1188.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Escalus",
@@ -519,7 +573,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/757980",
     "isActive": true,
     "peakRating": 1856.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ezioauditore0109",
@@ -528,7 +583,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13124087",
     "isActive": true,
     "peakRating": 1285.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Fgzb",
@@ -537,7 +593,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13045745",
     "isActive": true,
     "peakRating": 1220.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Firmatt",
@@ -546,7 +603,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12858284",
     "isActive": true,
     "peakRating": 1237.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Fishmanoli",
@@ -555,7 +613,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/295020",
     "isActive": true,
     "peakRating": 1225.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "FiveCatsATrebuchetAndADream",
@@ -564,7 +623,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9705242",
     "isActive": true,
     "peakRating": 1158.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Fj5589",
@@ -573,7 +633,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5830463",
     "isActive": true,
     "peakRating": 1088.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "FloosWorld",
@@ -582,7 +643,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1349",
     "isActive": true,
     "peakRating": 1043.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Flan Implacable",
@@ -591,7 +653,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/393242",
     "isActive": true,
     "peakRating": 1132.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Flying Mouse",
@@ -600,7 +663,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/227587",
     "isActive": true,
     "peakRating": 1619.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Fuegan33",
@@ -609,7 +673,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/880156",
     "isActive": true,
     "peakRating": 1652.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ganjiix",
@@ -618,7 +683,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2082547",
     "isActive": true,
     "peakRating": 1600.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Gilli0315",
@@ -627,7 +693,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10377768",
     "isActive": true,
     "peakRating": 1237.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Genoese Crossbowman",
@@ -636,7 +703,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/270569",
     "isActive": true,
     "peakRating": 1610.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "GeneralOcto",
@@ -645,7 +713,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12448049",
     "isActive": true,
     "peakRating": 1088.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "GeneralWakka",
@@ -654,7 +723,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1226225",
     "isActive": true,
     "peakRating": 1553.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Geologywade",
@@ -663,7 +733,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1858991",
     "isActive": true,
     "peakRating": 1568.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ghostwriter39",
@@ -672,7 +743,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12675701",
     "isActive": true,
     "peakRating": 1735.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Gil",
@@ -681,7 +753,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/330481",
     "isActive": true,
     "peakRating": 1632.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Gonzaleki",
@@ -690,7 +763,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12706469",
     "isActive": true,
     "peakRating": 1520.0,
-    "winRate": "65%"
+    "winRate": "65%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "GwizdeK",
@@ -699,7 +773,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/245082",
     "isActive": true,
     "peakRating": 1554.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Hagenhagen",
@@ -708,7 +783,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10002260",
     "isActive": true,
     "peakRating": 1489.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "[????] Happytheandy",
@@ -717,7 +793,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2397632",
     "isActive": true,
     "peakRating": 1949.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Hestia",
@@ -726,7 +803,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/230265",
     "isActive": true,
     "peakRating": 1773.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Hoppsy",
@@ -735,7 +813,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/456135",
     "isActive": true,
     "peakRating": 1768.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Hornet-Wing",
@@ -744,7 +823,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/272604",
     "isActive": true,
     "peakRating": 1266.0,
-    "winRate": "57%"
+    "winRate": "57%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Hoyohoyo9",
@@ -753,7 +833,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/237553",
     "isActive": true,
     "peakRating": 1715.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Huggie",
@@ -762,7 +843,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/89053",
     "isActive": true,
     "peakRating": 1742.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Init2winek",
@@ -771,7 +853,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1265221",
     "isActive": true,
     "peakRating": 1036.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "JagWarrior",
@@ -780,7 +863,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11471863",
     "isActive": true,
     "peakRating": 1571.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Janchez",
@@ -789,7 +873,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5578711",
     "isActive": true,
     "peakRating": 1483.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "JawolopingChris",
@@ -798,7 +883,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/303604",
     "isActive": true,
     "peakRating": 1693.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 7"]
   },
   {
     "name": "Javisty",
@@ -807,7 +893,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/392423",
     "isActive": true,
     "peakRating": 1828.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Joey the Bonqueror",
@@ -816,7 +903,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/300848",
     "isActive": true,
     "peakRating": 1907.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Jon",
@@ -825,7 +913,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6073899",
     "isActive": true,
     "peakRating": 1380.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Josenblad",
@@ -834,7 +923,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/92277",
     "isActive": true,
     "peakRating": 1336.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "J0N-PERKiNS",
@@ -843,7 +933,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3582838",
     "isActive": true,
     "peakRating": 1723.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Jskillz",
@@ -852,7 +943,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2363000",
     "isActive": true,
     "peakRating": 1757.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Judean People's Front",
@@ -861,7 +953,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/554997",
     "isActive": true,
     "peakRating": 1120.0,
-    "winRate": "33%"
+    "winRate": "33%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Kakabsen",
@@ -870,7 +963,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12784217",
     "isActive": true,
     "peakRating": 1401.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "Kiki da Foxvoid (Mikikki)",
@@ -879,7 +973,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12563061",
     "isActive": true,
     "peakRating": 1010.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Kisiel",
@@ -888,7 +983,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/8996251",
     "isActive": true,
     "peakRating": 1612.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Kitty",
@@ -897,7 +993,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12804586",
     "isActive": true,
     "peakRating": 979.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "KoaLollo",
@@ -906,7 +1003,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10162879",
     "isActive": true,
     "peakRating": 1185.0,
-    "winRate": null
+    "winRate": null,
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Koti",
@@ -915,7 +1013,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4033024",
     "isActive": true,
     "peakRating": 1747.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Kruppe",
@@ -924,7 +1023,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/449982",
     "isActive": true,
     "peakRating": 1306.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Kubya",
@@ -933,7 +1033,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/15780",
     "isActive": true,
     "peakRating": 1571.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Lamo",
@@ -942,7 +1043,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5188554",
     "isActive": true,
     "peakRating": 2543.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "Lartibro",
@@ -951,7 +1053,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12649900",
     "isActive": true,
     "peakRating": 1078.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Levana",
@@ -960,7 +1063,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1399661",
     "isActive": true,
     "peakRating": 1093.0,
-    "winRate": "43%"
+    "winRate": "43%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Lheodoric",
@@ -969,7 +1073,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12164510",
     "isActive": true,
     "peakRating": 1410.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Lord Benji",
@@ -978,7 +1083,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1859305",
     "isActive": true,
     "peakRating": 1270.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Lovee",
@@ -987,7 +1093,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1041133",
     "isActive": true,
     "peakRating": 1728.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Lukam10",
@@ -996,7 +1103,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13099567",
     "isActive": true,
     "peakRating": 1177.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 7"]
   },
   {
     "name": "Macklez",
@@ -1005,7 +1113,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2311389",
     "isActive": true,
     "peakRating": 1438.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Madbun",
@@ -1014,7 +1123,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/381651",
     "isActive": true,
     "peakRating": 1274.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "MajorTawm",
@@ -1023,7 +1133,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2963781",
     "isActive": true,
     "peakRating": 1419.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Majormelancholy",
@@ -1032,7 +1143,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2471138",
     "isActive": true,
     "peakRating": 1037.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "MarmotteQuantique",
@@ -1041,7 +1153,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/641",
     "isActive": true,
     "peakRating": 1530.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Matze",
@@ -1050,7 +1163,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13123606",
     "isActive": true,
     "peakRating": 2341.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "Mathmagician",
@@ -1059,7 +1173,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4845480",
     "isActive": true,
     "peakRating": 1226.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Maxpower973",
@@ -1068,7 +1183,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2320032",
     "isActive": true,
     "peakRating": 1712.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Maxymczech",
@@ -1077,7 +1193,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5813618",
     "isActive": true,
     "peakRating": 1793.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Mercurial",
@@ -1086,7 +1203,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1272377",
     "isActive": true,
     "peakRating": 1885.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Meshuggle",
@@ -1095,7 +1213,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12730545",
     "isActive": true,
     "peakRating": 1136.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Metalmania",
@@ -1104,7 +1223,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12434787",
     "isActive": true,
     "peakRating": 1649.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "MightySpaceFruit",
@@ -1113,7 +1233,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12772982",
     "isActive": true,
     "peakRating": 1909.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "MonkeyJuggler",
@@ -1122,7 +1243,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4351574",
     "isActive": true,
     "peakRating": 1013.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "NeoZz",
@@ -1131,7 +1253,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11275434",
     "isActive": true,
     "peakRating": 2564.0,
-    "winRate": "57%"
+    "winRate": "57%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 7"]
   },
   {
     "name": "Nessius Blaze",
@@ -1140,7 +1263,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12094556",
     "isActive": true,
     "peakRating": 1509.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Nope1585",
@@ -1149,7 +1273,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5968579",
     "isActive": true,
     "peakRating": 1449.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Nutty",
@@ -1158,7 +1283,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11720179",
     "isActive": true,
     "peakRating": 1291.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "OrangeMamba",
@@ -1167,7 +1293,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/648585",
     "isActive": true,
     "peakRating": 1344.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ozziey",
@@ -1176,7 +1303,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1530786",
     "isActive": true,
     "peakRating": 1238.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "Paapi",
@@ -1185,7 +1313,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/503998",
     "isActive": true,
     "peakRating": 1434.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Painter",
@@ -1194,7 +1323,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4850176",
     "isActive": true,
     "peakRating": 1578.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Pasta",
@@ -1203,7 +1333,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1111750",
     "isActive": true,
     "peakRating": 1368.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Pete26196",
@@ -1212,7 +1343,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/275448",
     "isActive": true,
     "peakRating": 1869.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Phoenix Oath",
@@ -1221,7 +1353,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/305008",
     "isActive": true,
     "peakRating": 1843.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Pisty",
@@ -1230,7 +1363,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2798038",
     "isActive": true,
     "peakRating": 1456.0,
-    "winRate": "57%"
+    "winRate": "57%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Pl0tterGhost",
@@ -1239,7 +1373,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/375383",
     "isActive": true,
     "peakRating": 1569.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Player123",
@@ -1248,7 +1383,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1137204",
     "isActive": true,
     "peakRating": 1334.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "PrinceFinnik",
@@ -1257,7 +1393,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2637747",
     "isActive": true,
     "peakRating": 1111.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Pride",
@@ -1266,7 +1403,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5634917",
     "isActive": true,
     "peakRating": 1287.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "PsychedelicTDog",
@@ -1275,7 +1413,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13150242",
     "isActive": true,
     "peakRating": 1166.0,
-    "winRate": "61%"
+    "winRate": "61%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "PygmyGiant",
@@ -1284,7 +1423,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5522724",
     "isActive": true,
     "peakRating": 1227.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ragnarthetueton",
@@ -1293,7 +1433,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6270231",
     "isActive": true,
     "peakRating": 1385.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Rameranic",
@@ -1302,7 +1443,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3064960",
     "isActive": true,
     "peakRating": 1302.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "Ranzunn",
@@ -1311,7 +1453,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1971123",
     "isActive": true,
     "peakRating": 1533.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Raudius",
@@ -1320,7 +1463,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/285711",
     "isActive": true,
     "peakRating": 1218.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Rayz",
@@ -1329,7 +1473,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12268569",
     "isActive": true,
     "peakRating": 2577.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "RealTHF",
@@ -1338,7 +1483,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1214206",
     "isActive": true,
     "peakRating": 1469.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Rebekah",
@@ -1347,7 +1493,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1278251",
     "isActive": true,
     "peakRating": 1337.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Rbase96",
@@ -1356,7 +1503,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2787704",
     "isActive": true,
     "peakRating": 1789.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "RDO_AOE2",
@@ -1365,7 +1513,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5672310",
     "isActive": true,
     "peakRating": 943.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Ricky_ld",
@@ -1374,7 +1523,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5172877",
     "isActive": true,
     "peakRating": 1213.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Risendragon Gaming",
@@ -1383,7 +1533,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12864690",
     "isActive": true,
     "peakRating": 702.0,
-    "winRate": "42%"
+    "winRate": "42%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Robin5hood",
@@ -1392,7 +1543,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/369054",
     "isActive": true,
     "peakRating": 1530.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "Roon Osricson",
@@ -1401,7 +1553,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/189537",
     "isActive": true,
     "peakRating": 1228.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Row row your boat",
@@ -1410,7 +1563,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/524610",
     "isActive": true,
     "peakRating": 1686.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Royalewithcheese",
@@ -1419,7 +1573,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3222983",
     "isActive": true,
     "peakRating": 1274.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Sandland",
@@ -1428,7 +1583,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/787064",
     "isActive": true,
     "peakRating": 1855.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Satellites of Heaven",
@@ -1437,7 +1593,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4985036",
     "isActive": true,
     "peakRating": 1464.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Scipio",
@@ -1446,7 +1603,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/66145",
     "isActive": true,
     "peakRating": 1321.0,
-    "winRate": "57%"
+    "winRate": "57%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Seb",
@@ -1455,7 +1613,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5405126",
     "isActive": true,
     "peakRating": 1803.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Selava",
@@ -1464,7 +1623,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6400696",
     "isActive": true,
     "peakRating": 1468.0,
-    "winRate": "57%"
+    "winRate": "57%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "SenorBonas",
@@ -1473,7 +1633,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/248524",
     "isActive": true,
     "peakRating": 1353.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Shashlyk",
@@ -1482,7 +1643,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/685782",
     "isActive": true,
     "peakRating": 1805.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "Shibani",
@@ -1491,7 +1653,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11718075",
     "isActive": true,
     "peakRating": 1312.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "SilverEclipse",
@@ -1500,7 +1663,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5581979",
     "isActive": true,
     "peakRating": 1049.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "SimpleMint",
@@ -1509,7 +1673,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2941867",
     "isActive": true,
     "peakRating": 1454.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Skinwimmel",
@@ -1518,7 +1683,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/215522",
     "isActive": true,
     "peakRating": 1181.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Soxs",
@@ -1527,7 +1693,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2972583",
     "isActive": true,
     "peakRating": 1543.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Spaz the Adventurer",
@@ -1536,7 +1703,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3582974",
     "isActive": true,
     "peakRating": 1554.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "SpiritOfTheUniverse",
@@ -1545,7 +1713,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4040905",
     "isActive": true,
     "peakRating": 1113.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Splattcol",
@@ -1554,7 +1723,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2406441",
     "isActive": true,
     "peakRating": 1673.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Strato",
@@ -1563,7 +1733,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11682569",
     "isActive": true,
     "peakRating": 1496.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Syagrius",
@@ -1572,7 +1743,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4515093",
     "isActive": true,
     "peakRating": 1099.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Szotyesz",
@@ -1581,7 +1753,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/232247",
     "isActive": true,
     "peakRating": 1430.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "T-Money",
@@ -1590,7 +1763,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12158425",
     "isActive": true,
     "peakRating": 1234.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Tanghay",
@@ -1599,7 +1773,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12965927",
     "isActive": true,
     "peakRating": 1323.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "The Chancellor",
@@ -1608,7 +1783,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/253973",
     "isActive": true,
     "peakRating": 1662.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "The Gardener",
@@ -1617,7 +1793,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10764180",
     "isActive": true,
     "peakRating": 1408.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "The Night",
@@ -1626,7 +1803,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/255714",
     "isActive": true,
     "peakRating": 1341.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "The Sleepy Bishop",
@@ -1635,7 +1813,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1030992",
     "isActive": true,
     "peakRating": 1872.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "The Wyandotte",
@@ -1644,7 +1823,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6801447",
     "isActive": true,
     "peakRating": 1495.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Thedissapointedinvader",
@@ -1653,7 +1833,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/336892",
     "isActive": true,
     "peakRating": 1750.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Thespicysicillian",
@@ -1662,7 +1843,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9137593",
     "isActive": true,
     "peakRating": 1156.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Tiltstars",
@@ -1671,7 +1853,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2627145",
     "isActive": true,
     "peakRating": 1535.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "TomAquinas",
@@ -1680,7 +1863,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11670083",
     "isActive": true,
     "peakRating": 1516.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Totillathehun",
@@ -1689,7 +1873,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4820637",
     "isActive": true,
     "peakRating": 1282.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "TrickyMicky90",
@@ -1698,7 +1883,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3083636",
     "isActive": true,
     "peakRating": 1464.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Twopenny Hangover",
@@ -1707,7 +1893,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4481462",
     "isActive": true,
     "peakRating": 1500.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Tuss",
@@ -1716,7 +1903,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1242469",
     "isActive": true,
     "peakRating": 1966.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Validus87",
@@ -1725,7 +1913,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13166108",
     "isActive": true,
     "peakRating": 902.0,
-    "winRate": "49%"
+    "winRate": "49%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Volunteer Dominos\u00ae Employee",
@@ -1734,7 +1923,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2567136",
     "isActive": true,
     "peakRating": 1401.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Vomastek",
@@ -1743,7 +1933,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1104040",
     "isActive": true,
     "peakRating": 1621.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Wait...What?",
@@ -1752,7 +1943,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12531213",
     "isActive": true,
     "peakRating": 1155.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Warchief_Link",
@@ -1761,7 +1953,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3446799",
     "isActive": true,
     "peakRating": 1234.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Whyza",
@@ -1770,7 +1963,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/16309",
     "isActive": true,
     "peakRating": 1113.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Willdbeast",
@@ -1779,7 +1973,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/278329",
     "isActive": true,
     "peakRating": 1937.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 7"]
   },
   {
     "name": "Witty_matty",
@@ -1788,7 +1983,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/10667559",
     "isActive": true,
     "peakRating": 1461.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Xardas_AOE",
@@ -1797,7 +1993,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/186332",
     "isActive": true,
     "peakRating": 1470.0,
-    "winRate": "64%"
+    "winRate": "64%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Xolotl",
@@ -1806,7 +2003,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3043685",
     "isActive": true,
     "peakRating": 1645.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "xRavyn",
@@ -1815,7 +2013,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6242021",
     "isActive": true,
     "peakRating": 1794.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Yany",
@@ -1824,7 +2023,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1930",
     "isActive": true,
     "peakRating": 1229.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2"]
   },
   {
     "name": "Zark23",
@@ -1833,7 +2033,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5284914",
     "isActive": true,
     "peakRating": 1473.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "[????]King_Boo",
@@ -1842,7 +2043,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/180520",
     "isActive": true,
     "peakRating": 2278.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "randy pan",
@@ -1851,7 +2053,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1070306",
     "isActive": true,
     "peakRating": 1859.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Meh247",
@@ -1860,7 +2063,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/529262",
     "isActive": true,
     "peakRating": 1705.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "1Sh0t",
@@ -1869,7 +2073,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9319174",
     "isActive": true,
     "peakRating": 1533.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Chris",
@@ -1878,7 +2083,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11769331",
     "isActive": true,
     "peakRating": 1493.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "McNuggets",
@@ -1887,7 +2093,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/334334",
     "isActive": true,
     "peakRating": 1311.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "aje.omar",
@@ -1896,7 +2103,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9189507",
     "isActive": true,
     "peakRating": 1352.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "grapejuice",
@@ -1905,7 +2113,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11688652",
     "isActive": true,
     "peakRating": 1207.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "Laurie",
@@ -1914,7 +2123,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/243944",
     "isActive": true,
     "peakRating": 1200.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Fairytale Belkross",
@@ -1923,7 +2133,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1370771",
     "isActive": true,
     "peakRating": 1235.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Forteraiger",
@@ -1932,7 +2143,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13285902",
     "isActive": true,
     "peakRating": 1218.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Smithers",
@@ -1941,7 +2153,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1304628",
     "isActive": true,
     "peakRating": 1210.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "SoleZebrafish",
@@ -1950,7 +2163,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2650734",
     "isActive": true,
     "peakRating": 1219.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Forkan Rick",
@@ -1959,7 +2173,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2363867",
     "isActive": true,
     "peakRating": 1178.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "marathaSun",
@@ -1968,7 +2183,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2543215",
     "isActive": true,
     "peakRating": 1150.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Jasuni",
@@ -1977,7 +2193,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1464223",
     "isActive": true,
     "peakRating": 1072.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "QuailzEnFire903",
@@ -1986,7 +2203,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12964183",
     "isActive": true,
     "peakRating": 1035.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8"]
   },
   {
     "name": "Nagraj",
@@ -1995,7 +2213,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6903668",
     "isActive": true,
     "peakRating": 1024.0,
-    "winRate": "61%"
+    "winRate": "61%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8", "7ps Season 7", "Stronghold Frenzy 2"]
   },
   {
     "name": "Fairytale Fox",
@@ -2004,7 +2223,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4662319",
     "isActive": true,
     "peakRating": 1040.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["T90 Community Cup 2", "7ps Season 8"]
   },
   {
     "name": "schmabenkl",
@@ -2013,7 +2233,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1880713",
     "isActive": true,
     "peakRating": 989.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["7ps Season 8", "7ps Season 7"]
   },
   {
     "name": "Crystella",
@@ -2022,7 +2243,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3892549",
     "isActive": true,
     "peakRating": 819.0,
-    "winRate": "38%"
+    "winRate": "38%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8"]
   },
   {
     "name": "Rodrixs Black Reaper",
@@ -2031,7 +2253,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11440407",
     "isActive": true,
     "peakRating": 2431.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "wR.Prisma",
@@ -2040,7 +2263,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3176045",
     "isActive": true,
     "peakRating": 2766.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "DS_Ozone",
@@ -2049,7 +2273,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2654577",
     "isActive": true,
     "peakRating": 2636.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "T90Official",
@@ -2058,7 +2283,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/197930",
     "isActive": true,
     "peakRating": 2435.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "NOC | Wean Dinchester",
@@ -2067,7 +2293,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/300565",
     "isActive": true,
     "peakRating": 2371.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "OS+ | shiXo.#",
@@ -2076,7 +2303,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1137086",
     "isActive": true,
     "peakRating": 2371.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "DarK | Benanji",
@@ -2085,7 +2313,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2463959",
     "isActive": true,
     "peakRating": 2403.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "NuMa | AngelR",
@@ -2094,7 +2323,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6838238",
     "isActive": true,
     "peakRating": 2263.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "OLADUSHEK",
@@ -2103,7 +2333,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1853187",
     "isActive": true,
     "peakRating": 2104.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "[GLD] Abu abdullah",
@@ -2112,7 +2343,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5839022",
     "isActive": true,
     "peakRating": 2228.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "RoR | Bourbon",
@@ -2121,7 +2353,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1877180",
     "isActive": true,
     "peakRating": 2067.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Umdeuter",
@@ -2130,7 +2363,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/249384",
     "isActive": true,
     "peakRating": 2009.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Auriko",
@@ -2139,7 +2373,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12642909",
     "isActive": true,
     "peakRating": 1882.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "DS_qso214",
@@ -2148,7 +2383,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3150133",
     "isActive": true,
     "peakRating": 1832.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Froman",
@@ -2157,7 +2393,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4882298",
     "isActive": true,
     "peakRating": 1775.0,
-    "winRate": "56%"
+    "winRate": "56%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "DGHIR | Qeetsa",
@@ -2166,7 +2403,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2075681",
     "isActive": true,
     "peakRating": 1827.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "JustAGecko",
@@ -2175,7 +2413,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/236400",
     "isActive": true,
     "peakRating": 1891.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8"]
   },
   {
     "name": "Cynthia",
@@ -2184,7 +2423,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/591709",
     "isActive": true,
     "peakRating": 1733.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "edricsturm",
@@ -2193,7 +2433,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1467023",
     "isActive": true,
     "peakRating": 1889.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "CharChar",
@@ -2202,7 +2443,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/988308",
     "isActive": true,
     "peakRating": 1733.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "ThisDino",
@@ -2211,7 +2453,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2533089",
     "isActive": true,
     "peakRating": 1736.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Refraid",
@@ -2220,7 +2463,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2404771",
     "isActive": true,
     "peakRating": 1802.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "bobolavache",
@@ -2229,7 +2473,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1972590",
     "isActive": true,
     "peakRating": 1639.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Nown0",
@@ -2238,7 +2483,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4117931",
     "isActive": true,
     "peakRating": 1630.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Zycherious",
@@ -2247,7 +2493,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2542159",
     "isActive": true,
     "peakRating": 1659.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Sylne4r",
@@ -2256,7 +2503,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1133888",
     "isActive": true,
     "peakRating": 1646.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "gummi [Coleman]",
@@ -2265,7 +2513,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/260749",
     "isActive": true,
     "peakRating": 1739.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Matthew",
@@ -2274,7 +2523,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/348642",
     "isActive": true,
     "peakRating": 1616.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Red Clifford",
@@ -2283,7 +2533,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1579558",
     "isActive": true,
     "peakRating": 1598.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "tommy9512",
@@ -2292,7 +2543,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1133051",
     "isActive": true,
     "peakRating": 1527.0,
-    "winRate": "67%"
+    "winRate": "67%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "7ps Season 8"]
   },
   {
     "name": "Nessy",
@@ -2301,7 +2553,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/730232",
     "isActive": true,
     "peakRating": 1483.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Ex Lux",
@@ -2310,7 +2563,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12372443",
     "isActive": true,
     "peakRating": 1371.0,
-    "winRate": "55%"
+    "winRate": "55%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "dead words",
@@ -2319,7 +2573,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12870315",
     "isActive": true,
     "peakRating": 1468.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "DraconicAspirant",
@@ -2328,7 +2583,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12558832",
     "isActive": true,
     "peakRating": 1579.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Citizen Snips",
@@ -2337,7 +2593,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/318414",
     "isActive": true,
     "peakRating": 1448.0,
-    "winRate": "60%"
+    "winRate": "60%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "hjpotter92",
@@ -2346,7 +2603,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1228227",
     "isActive": true,
     "peakRating": 1251.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "hooplah",
@@ -2355,7 +2613,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2594407",
     "isActive": true,
     "peakRating": 1369.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "R3ChuukLogan",
@@ -2364,7 +2623,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/686170",
     "isActive": true,
     "peakRating": 1401.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Russian77",
@@ -2373,7 +2633,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1824106",
     "isActive": true,
     "peakRating": 1379.0,
-    "winRate": "58%"
+    "winRate": "58%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Temperance",
@@ -2382,7 +2643,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3588422",
     "isActive": true,
     "peakRating": 1317.0,
-    "winRate": "63%"
+    "winRate": "63%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Sir_Duncan_The_Gull",
@@ -2391,7 +2653,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12626394",
     "isActive": true,
     "peakRating": 1386.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "B\u00e9bou",
@@ -2400,7 +2663,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12744378",
     "isActive": true,
     "peakRating": 1360.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Philly Idle",
@@ -2409,7 +2673,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2105467",
     "isActive": true,
     "peakRating": 1177.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Rodeo Jones",
@@ -2418,7 +2683,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6754763",
     "isActive": true,
     "peakRating": 1346.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Lich King",
@@ -2427,7 +2693,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4049887",
     "isActive": true,
     "peakRating": 1275.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "PajosPSCB",
@@ -2436,7 +2703,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3528123",
     "isActive": true,
     "peakRating": 1296.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "FT20",
@@ -2445,7 +2713,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12660890",
     "isActive": true,
     "peakRating": 1275.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "Maestro | just a fish",
@@ -2454,7 +2723,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9440670",
     "isActive": true,
     "peakRating": 1315.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "collace1",
@@ -2463,7 +2733,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3084633",
     "isActive": true,
     "peakRating": 1220.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Pairu",
@@ -2472,7 +2743,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11662735",
     "isActive": true,
     "peakRating": 1176.0,
-    "winRate": "57%"
+    "winRate": "57%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "SavageDog",
@@ -2481,7 +2753,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12975601",
     "isActive": true,
     "peakRating": 1192.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "Biodox",
@@ -2490,7 +2763,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/213904",
     "isActive": true,
     "peakRating": 1114.0,
-    "winRate": "62%"
+    "winRate": "62%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Maudje10",
@@ -2499,7 +2773,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12257117",
     "isActive": true,
     "peakRating": 1161.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Busfahrer Ulus",
@@ -2508,7 +2783,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/756434",
     "isActive": true,
     "peakRating": 1094.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "JJNZ",
@@ -2517,7 +2793,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4320164",
     "isActive": true,
     "peakRating": 1115.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "rey_erizo",
@@ -2526,7 +2803,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12790570",
     "isActive": true,
     "peakRating": 1056.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "Stronghold Frenzy 2"]
   },
   {
     "name": "ClickBait",
@@ -2535,7 +2813,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12225770",
     "isActive": true,
     "peakRating": 1206.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "The Healing Monk",
@@ -2544,7 +2823,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/6901774",
     "isActive": true,
     "peakRating": 1090.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "camfewell",
@@ -2553,7 +2833,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12605769",
     "isActive": true,
     "peakRating": 1118.0,
-    "winRate": "53%"
+    "winRate": "53%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "PilgrimSoul",
@@ -2562,7 +2843,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12387823",
     "isActive": true,
     "peakRating": 1092.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "RoboticPro",
@@ -2571,7 +2853,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3877987",
     "isActive": true,
     "peakRating": 965.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "MagratGarlick",
@@ -2580,7 +2863,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4061537",
     "isActive": true,
     "peakRating": 1049.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "RKnight8",
@@ -2589,7 +2873,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12363008",
     "isActive": true,
     "peakRating": 1028.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "Eljardinero4",
@@ -2598,7 +2883,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4954691",
     "isActive": true,
     "peakRating": 1096.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Gaius Iulius Megas",
@@ -2607,7 +2893,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/3596974",
     "isActive": true,
     "peakRating": 1040.0,
-    "winRate": "44%"
+    "winRate": "44%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "Camaraderie",
@@ -2616,7 +2903,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12081608",
     "isActive": true,
     "peakRating": 1081.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "\ubc15\ud300",
@@ -2625,7 +2913,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1545285",
     "isActive": true,
     "peakRating": 993.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "filipellopes",
@@ -2634,7 +2923,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/5878630",
     "isActive": true,
     "peakRating": 872.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "tumblwd",
@@ -2643,7 +2933,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/1156997",
     "isActive": true,
     "peakRating": 896.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "ButterFingerz",
@@ -2652,7 +2943,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12736422",
     "isActive": true,
     "peakRating": 866.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2"]
   },
   {
     "name": "gurudeburdel",
@@ -2661,7 +2953,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12860672",
     "isActive": true,
     "peakRating": 903.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14", "T90 Community Cup 2", "Stronghold Frenzy 2"]
   },
   {
     "name": "LeORI",
@@ -2670,7 +2963,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/12893468",
     "isActive": true,
     "peakRating": 838.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "InkMeBaby69",
@@ -2679,7 +2973,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13317354",
     "isActive": true,
     "peakRating": 939.0,
-    "winRate": "52%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "griff3n",
@@ -2688,7 +2983,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/289975",
     "isActive": true,
     "peakRating": 577.0,
-    "winRate": "20%"
+    "winRate": "20%",
+    "recentTournamentsPlayed": ["AoeLeagues Season 14"]
   },
   {
     "name": "santiagoap",
@@ -2697,16 +2993,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2429779",
     "isActive": true,
     "peakRating": 1887.0,
-    "winRate": "52%"
-  },
-  {
-    "name": "wosm",
-    "country": "Poland",
-    "rating": 1760.0,
-    "profileUrl": "https://www.aoe2insights.com/user/12767241",
-    "isActive": true,
-    "peakRating": 1778.0,
-    "winRate": "61%"
+    "winRate": "52%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Jarvin",
@@ -2715,7 +3003,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/225026",
     "isActive": true,
     "peakRating": 1883.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "TrCL.Welcometorapture",
@@ -2724,7 +3013,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/4460059",
     "isActive": true,
     "peakRating": 1432.0,
-    "winRate": "62%"
+    "winRate": "62%",
+    "recentTournamentsPlayed": ["7ps Season 8", "Stronghold Frenzy 2"]
   },
   {
     "name": "Mike'dugai",
@@ -2733,7 +3023,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/670688",
     "isActive": true,
     "peakRating": 1389.0,
-    "winRate": "62%"
+    "winRate": "62%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "Tejanoheat",
@@ -2742,7 +3033,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/9330870",
     "isActive": true,
     "peakRating": 1462.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "apach2412",
@@ -2751,7 +3043,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/2783719",
     "isActive": true,
     "peakRating": 1407.0,
-    "winRate": "51%"
+    "winRate": "51%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "xCONTORTIONISTx",
@@ -2760,7 +3053,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/440650",
     "isActive": true,
     "peakRating": 1033.0,
-    "winRate": "54%"
+    "winRate": "54%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "dumbcube",
@@ -2769,7 +3063,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/11763878",
     "isActive": true,
     "peakRating": 697.0,
-    "winRate": "50%"
+    "winRate": "50%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   },
   {
     "name": "SlayerTTV750",
@@ -2778,7 +3073,8 @@ const samplePlayers = [
     "profileUrl": "https://www.aoe2insights.com/user/13201730",
     "isActive": true,
     "peakRating": 584.0,
-    "winRate": "44%"
+    "winRate": "44%",
+    "recentTournamentsPlayed": ["7ps Season 8"]
   }
 ];
 
@@ -2790,110 +3086,146 @@ const sampleMaps = [
     name: "Badlands",
     image: "/maps/badlands.png",
     type: "Open",
-    description: "Players cannot farm near town centers. Wood in the immediate area is scarce. More wood rests in the central pit. Players can expect to have scattered economies and endless raiding throughout the game",
+    description:
+      "Players cannot farm near town centers. Wood in the immediate area is scarce. More wood rests in the central pit, but there are wolves in that area.",
     bestCivs: ["Romans", "Magyars", "Khmer", "Japanese"],
-    strategies: ["20 pop MAA", "19 pop Scouts", "Heavy Feudal aggression"],
+    strategies: ["20 pop MAA", "19 pop Scouts"],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Open terrain", "Scattered resources", "Multiple attack angles"],
+    bonus: "Heavy feudal aggression is preferred since villagers are scattered and map is hard to wall.",
   },
   {
     id: "big-freeze",
     name: "Big Freeze",
     image: "/maps/big-freeze.png",
     type: "Closed",
-    description: "Players start surrounded by palisade walls as a weak defence against early aggression. The middle of the map is a big frozen lake, but with a few cracks and exposed water, players will be able to fish through the cracks.",
+    description:
+      "Players start surrounded by palisade walls as a weak defence. The middle of the map is a frozen lake with cracks that allow fishing.",
     bestCivs: ["Romans", "Japanese", "Armenians"],
-    strategies: ["MAA + archers/skirms", "MAA + towers"],
+    strategies: ["20 pop MAA + Archers/Skirms", "20 pop MAA + towers"],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Water control", "Ice passages", "Limited resources"],
+    bonus: "Shore fish control is vital; a well-timed MAA opening and the initial fight can define the entire game’s momentum."
   },
   {
     id: "coast-arena",
     name: "Coast Arena",
     image: "/maps/coast-arena.png",
     type: "Water",
-    description: "Imagine Arena, but with water all around the map’s edge. Open space towards your opponents and relics in the center, forests on both sides of your base",
+    description:
+      "Arena-style map but surrounded by water. Open space toward opponents and relics in the center.",
     bestCivs: ["Malay", "Bengalis", "Italians", "Armenians"],
-    strategies: ["Triple Dock Galleys", "FC Fires/War Galleys", "Castle Drop + UU/Fast Imp", "Monk Rush"],
+    strategies: [
+      "Triple Dock Galleys",
+      "FC Fires/War Galleys",
+      "Castle Drop + UU/Fast Imp",
+      "Monk Rush"
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Walled start", "Coastal access", "Defensive positioning"],
+    bonus: "Water control is crucial because there is limited space for villagers to gather resources so fishing ships are economically superior. Castle drops and monk rushes also work well as supporting strategies"
   },
   {
     id: "hoodoo",
     name: "Hoodoo",
     image: "/maps/hoodoo.png",
     type: "Nomad",
-    description: "Nomad start for Scandavia like map. Has a lot of hunts available nearby.",
+    description:
+      "Nomad start on a Scandinavian-like map with heavy hunts scattered around.",
     bestCivs: ["Spanish", "Koreans", "Italians"],
-    strategies: ["Eagle warrior raids", "Archer mass with micro", "Economic boom to Imperial"],
+    strategies: [
+      "FC Unique Unit/Smush",
+      "Fast Feudal + Double Dock Fires",
+      "Fast Feudal Archers"
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Central forest", "Multiple expansions", "Raid opportunities"],
+    bonus: "Prioritize fast TC placement near hunts for a strong early eco."
   },
   {
     id: "koala",
     name: "Koala",
     image: "/maps/koala.png",
     type: "Open",
-    description: "A random map in the shape of a koala head. Curved back woodline might give a false sense of security as the berries and one of your two gold and stone piles will always spawn forward. Additional gold and stone can be found on the mountainous outer reaches of the map",
+    description:
+      "A random map in the shape of a koala head. Players always start with a curved back woodline. Additional gold and stone can be found on the mountainous outer reaches of the map.",
     bestCivs: ["Lithuanians", "Aztecs"],
-    strategies: ["Archer play with forest advantage", "Siege push through chokes", "Economic focus with trade"],
+    strategies: [
+      "20 pop MAA + Archers/Skirms",
+      "19 pop Scouts + Skirms/Archers",
+      "19 pop Spear Skirm Rush"
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Forest advantage", "Multiple clearings", "Choke points"],
+    bonus: "The close distance makes laming easy to execute. Berries and gold are always forward, so a forward range can be effective for applying pressure."
   },
   {
     id: "le-grand-fosse",
     name: "Le Grand Fosse",
     image: "/maps/le-grand-fosse.png",
     type: "Closed",
-    description: "Each player starts in half a village, separated by a ditch. Resources within the village are scarce and there are no safe woodlines inside the palisade walls. Wild boars are found near the forests. All the neutral gold is protected by four fortified Roman camps in the corners.",
+    description:
+      "Each player starts in half a village, separated by a ditch. Resources within the village are scarce and there are no safe woodlines inside the palisade walls. Wild boars are found near the forests.",
     bestCivs: ["Dravidians", "Romans", "Mongols"],
-    strategies: ["Cavalry dominance on open areas", "Control of high ground", "Multi-pronged attacks"],
+    strategies: [
+      "20 pop MAA + Archers/Skirms",
+      "20 pop MAA + Towers",
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Elevation differences", "Central depression", "Strategic positioning"],
+    bonus: "Woodlines are always outside, so pressuring them with ranged units or towers can decide the game."
   },
   {
     id: "northern-crossings",
     name: "Northern Crossings",
     image: "/maps/northen-crossings.png",
     type: "Hybrid",
-    description: "Similar to Northen Isles but adds shallow connections between the player islands on both sides. Players start with a transport ship. ",
+    description:
+      "Northern Isles but with shallow crossings, so players don’t need transport ships to reach the opponent’s island.",
     bestCivs: ["Dravidians", "Italians", "Armenians"],
-    strategies: ["Fast galley rush", "Island hopping with transports", "Cannon galleon control"],
+    strategies: [
+      "Double Dock Fires + Archers/Skirms",
+      "Triple Dock Galleys",
+      "FC War Galleys/Fires"
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Multiple islands", "Naval combat", "Transport warfare"],
   },
   {
     id: "roe-rage",
     name: "Roe Rage",
     image: "/Roe_rage_aoe2_map.png",
     type: "Hybrid",
-    description: "Described as a Kawasan cousin, Roe Rage features extra cows and a pond in the middle, which players can get to once they cut through a ring of trees. Extra gold and stone are scattered throughout the map",
+    description:
+      "Kawasan-style map with extra cows and a pond in the middle. Each player starts with deep fish directly under their Town Center",
     bestCivs: ["Georgians", "Chinese", "Lithuanians"],
-    strategies: ["Aggressive galley play", "Fire ship counters", "Central island control"],
+    strategies: [
+      "MAA + Archers/Skirms",
+      "Scouts + Skirms/Archers",
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Central island", "Aggressive gameplay", "Naval focus"],
   },
   {
     id: "sunburn",
     name: "Sunburn",
     image: "/maps/sunburn.png",
     type: "Open",
-    description: "With one extensive forest dividing the savannah, choosing the right direction of attack will be critical in the quest for complete domination. The savannah is home to many resources",
+    description:
+      "A savannah with a single large forest dividing the map. Many ponds offer fish.",
     bestCivs: ["Mayans", "Goths", "Incas"],
-    strategies: ["Hybrid army composition", "Pond control for fish", "Flexible unit production"],
+    strategies: [
+      "19 pop Archers/Skirms",
+      "19 pop Scouts + Skirms",
+    ],
     tournaments: ["T90 Community Cup 2", "Secret Desert Cup"],
-    features: ["Multiple ponds", "Hybrid gameplay", "Flexible strategies"],
   },
   {
     id: "triple-tunnel",
     name: "Triple Tunnel",
     image: "/triple-tunnel.png",
     type: "Closed",
-    description: "Similar to Black Forest but has three openings always and a pond for fish boom. Extra golds and stone positioned in each opening ",
+    description:
+      "Black Forest-esque with three openings and a pond for fish booming.",
     bestCivs: ["Malay", "Burgundians", "Japanese"],
-    strategies: ["Gunpowder unit advantage", "Coastal control", "Tunnel warfare tactics"],
+    strategies: [
+      "FC Unique Unit/Boom",
+      "MAA + Forward Range into Archers/Skirms",
+    ],
     tournaments: ["T90 Community Cup 2"],
-    features: ["Tunnel systems", "Coastal elements", "Strategic depth"],
+    bonus: "Fish booming is very strong to gain an economic advantage"
   },
   {
     id: "african-rivers",
@@ -2903,11 +3235,14 @@ const sampleMaps = [
     description:
       "Players start very close to each other with a tiny lake running through the center of the map. Players spawn on the inner ring, separated by a river from the outer ring where most resources are located.",
     bestCivs: ["Japanese", "Georgians", "Chinese"],
-    strategies: ["Fast Town Center placement", "Villager fights for resources", "Quick military production"],
-   tournaments: ["T90 Community Cup 2"],
-    features: ["No starting Town Center", "Resource competition", "High skill ceiling"],
-  },
-]
+    strategies: [
+      "Double Dock Fires + Archers/Skirms",
+      "Double Dock Fires + MAA into Skirms/Archers", 
+    ],
+    tournaments: ["T90 Community Cup 2"],
+  }
+];
+
 
 
 const sampleDiscordServers = [
@@ -3004,12 +3339,13 @@ const sampleTournaments = [
     organizer: 'Rbase',
     date: new Date('2025-11-24'),
     prizePool: { amount: 0, currency: 'USD' },
-    status: 'registration', // upcoming
+    status: 'ongoing', // upcoming
     registrationDeadline: new Date('2025-11-21'),
     registrationLink: 'https://discord.com/invite/vMpPuPjba8',
     type: 'Community',
     format: 'Round Robin',
     description: 'New T90 community event with sudden death settings',
+    playoffsStarted: false,
     featured: false,
     isActive: true
   },
@@ -3025,6 +3361,20 @@ const sampleTournaments = [
     playoffsStarted: false,
     format: 'Round Robin',
     description: 'Anything can happen to you. Exploding Vills, Dodgeball, Cheat Codes and more',
+    featured: false,
+    isActive: true
+  },
+  {
+    name: 'Nomad League: Relocated',
+    organizer: 'Sokół, Mikedugai, Nessy, Kajarson',
+    date: new Date('2025-12-08'),
+    prizePool: { amount: 0, currency: 'USD' },
+    status: 'registration', // upcoming
+    registrationDeadline: new Date('2025-12-05'),
+    registrationLink: 'https://discord.gg/etdpkXuyzK',
+    type: 'Community',
+    format: 'Round Robin',
+    description: 'First official Low Elo Legion 1v1 Nomad League! This event is designed to give players of all skill levels a chance to compete in a structured, fun, and community-driven format.',
     featured: false,
     isActive: true
   },
@@ -3066,20 +3416,20 @@ const sampleLeaderboard = [
     { division: "Division B", player: "Abu Abdullah", rating: null },
     { division: "Division C", player: "TheSleepyBishop", rating: null },
     { division: "Division D", player: "Metal", rating: null },
+    { division: "Division E", player: "Flying Mouse", rating: null },
     { division: "Division F", player: "tommy9512", rating: null },
     { division: "Division G", player: "Nope1585", rating: null },
     { division: "Division H", player: "Ezio", rating: null },
-    { division: "Division I", player: "El Mikalos", rating: null }
   ],
   runnerUps: [
     { division: "Division A", player: "Rodrixs", rating: null },
     { division: "Division B", player: "xRavyn", rating: null },
     { division: "Division C", player: "JustAGecko", rating: null },
     { division: "Division D", player: "gh0stwriter", rating: null },
+    { division: "Division E", player: "Spaz The Adventurer", rating: null },
     { division: "Division F", player: "Red Clifford", rating: null },
     { division: "Division G", player: "Citizen Snips", rating: null },
     { division: "Division H", player: "canttouchme", rating: null },
-    { division: "Division I", player: "Hornet-Wing", rating: null }
   ],
   isActive: true
 }
