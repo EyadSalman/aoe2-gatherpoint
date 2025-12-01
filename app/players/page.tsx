@@ -12,28 +12,22 @@ import {
   SelectTrigger, 
   SelectValue 
 } from "@/components/ui/select"
-import { Search, MapPin, ExternalLink, Zap, Users, Globe, BarChart3 } from "lucide-react"
+import { ChevronDown, ChevronUp, BadgeCheck, Trophy, Sword, Hammer, Flag, Target, Shield, Search, MapPin, ExternalLink, Zap, Users, Globe, BarChart3 } from "lucide-react"
 
-function PlayerCard({ player }: { player: any }) {
+function PlayerCard({ player, isExpanded, onToggle }: { player: any; isExpanded: boolean; onToggle: () => void }) {
   const getRatingColor = (rating: number | null) => {
-    if (rating === null || rating === undefined)
-      return "bg-lime-100 text-lime-700 dark:bg-lime-900 dark:text-lime-200";
-    if (rating >= 2000)
-      return "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-200";
-    if (rating >= 1700 && rating < 2000)
-      return "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200";
-    if (rating >= 1400 && rating < 1700)
-      return "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200";
-    if (rating >= 1100 && rating < 1400)
-      return "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200";
+    if (rating === null || rating === undefined) return "bg-lime-100 text-lime-700 dark:bg-lime-900 dark:text-lime-200"
+    if (rating >= 2000) return "bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-200"
+    if (rating >= 1700 && rating < 2000) return "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200"
+    if (rating >= 1400 && rating < 1700) return "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200"
+    if (rating >= 1100 && rating < 1400) return "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200"
     if (rating >= 700 && rating < 1100)
-      return "bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-200";
-    if (rating > 0 && rating < 700)
-      return "bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-200";
-    return "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300";
-  };
+      return "bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-200"
+    if (rating > 0 && rating < 700) return "bg-violet-100 text-violet-700 dark:bg-violet-900 dark:text-violet-200"
+    return "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+  }
 
-  const playerColor = getRatingColor(player.rating);
+  const playerColor = getRatingColor(player.rating)
 
   return (
     <Card className="group relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/30">
@@ -75,10 +69,29 @@ function PlayerCard({ player }: { player: any }) {
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs font-medium text-muted-foreground text-center leading-tight">Win Rate</span>
             <Badge className={`${playerColor} font-mono font-semibold text-sm px-2 py-1`}>
-                {player.winRate || "N/A"}
+              {player.winRate ? `${player.winRate}` : "N/A"}
             </Badge>
           </div>
         </div>
+
+        {player.recentTournamentsPlayed && player.recentTournamentsPlayed.length > 0 && (
+          <div className="pt-2 border-t border-border/50">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="h-3.5 w-3.5 text-primary flex-shrink-0" />
+              <span className="text-xs font-semibold text-muted-foreground">Recent Tournaments Played</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {player.recentTournamentsPlayed.map((tournament: string, idx: number) => (
+                <div
+                  key={idx}
+                  className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20 hover:bg-primary/20 transition-colors"
+                >
+                  {tournament}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <a
           href={player.profileUrl}
@@ -87,7 +100,7 @@ function PlayerCard({ player }: { player: any }) {
           className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-primary/10 text-primary hover:bg-primary/20 transition-colors text-sm font-medium group/link"
         >
           <ExternalLink className="h-3.5 w-3.5" />
-          View Profile
+          View Insights
           <span className="opacity-0 group-hover/link:opacity-100 transition-opacity">→</span>
         </a>
       </CardContent>
@@ -103,6 +116,9 @@ export default function GlossaryPage() {
   const [selectedLetter, setSelectedLetter] = useState("all")
   const [selectedWinRate, setSelectedWinRate] = useState("all")
   const [loading, setLoading] = useState(true)
+  const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null)
+
+  
 
   useEffect(() => {
     fetch("/api/players")
@@ -288,6 +304,8 @@ export default function GlossaryPage() {
           </div>
         </div>
 
+        
+
         {/* Loading */}
         {loading && (
           <div className="text-center py-16">
@@ -334,7 +352,7 @@ export default function GlossaryPage() {
 
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {list.map((player: any) => (
-                      <PlayerCard key={player._id} player={player} />
+                      <PlayerCard key={player._id} player={player}  isExpanded={expandedPlayer === player._id}  onToggle={() => setExpandedPlayer(expandedPlayer === player._id ? null : player._id)}/>
                     ))}
                   </div>
                 </section>
