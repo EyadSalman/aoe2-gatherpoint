@@ -35,7 +35,7 @@ const discordServers = [
   {
     name: "Alchemy AOE Community",
     description: "New custom maps every new season with an exciting theme",
-    url: "https://discord.gg/gd5rht665X",
+    url: "https://discord.gg/Vz7p5JDkKw",
     featured: true,
   },
   {

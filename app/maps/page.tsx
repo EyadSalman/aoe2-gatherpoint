@@ -3,22 +3,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Navigation } from "@/components/navigation";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+import { Card,CardContent,CardDescription,CardHeader,CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+  Dialog, DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger,
 } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
@@ -34,6 +24,7 @@ type MapType = {
   tournaments: string[];
   features: string[];
   bestCivs?: string[];
+  bonus?: string; 
 };
 
 const categories = ["All", "Open", "Closed", "Water", "Hybrid", "Nomad"];
@@ -104,24 +95,30 @@ function MapCard({ map }: { map: MapType }) {
               </TabsList>
 
               {/* Strategies */}
-              <TabsContent value="strategies" className="mt-6 space-y-4">
-                <div>
-                  <h4 className="font-medium mb-3">Recommended Strategies</h4>
-                  {map.strategies?.length ? (
-                    <ul className="space-y-2">
-                      {map.strategies.map((s, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <span>{s}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="text-sm text-muted-foreground">
-                      No strategies listed.
-                    </p>
-                  )}
-                </div>
-              </TabsContent>
+              <TabsContent value="strategies" className="mt-6 space-y-6">
+                      <div>
+                        <h4 className="font-medium mb-3">Recommended Strategies</h4>
+                        {map.strategies?.length ? (
+                          <ul className="space-y-2">
+                            {map.strategies.map((s, i) => (
+                              <li key={i} className="flex items-start gap-2 text-sm">
+                                <span>{s}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p className="text-sm text-muted-foreground">No strategies listed.</p>
+                        )}
+                      </div>
+
+                      {/* 🚀 Bonus Section */}
+                      {map.bonus && (
+                        <div className="pt-4 border-t">
+                          <h4 className="font-medium mb-2">Bonus Tip</h4>
+                          <p className="text-sm text-muted-foreground">{map.bonus}</p>
+                        </div>
+                      )}
+                    </TabsContent>
 
               {/* Best Civs */}
               <TabsContent value="civs" className="mt-6 space-y-4">
@@ -206,7 +203,7 @@ export default function MapsPage() {
             Tournament Maps
           </h1>
           <p className="mt-2 text-lg text-muted-foreground text-pretty">
-            Explore strategic maps used in competitive Age of Empires 2
+            Explore maps used in competitive Age of Empires 2
             tournaments
           </p>
         </div>

@@ -25,6 +25,12 @@ const mapSchema = new mongoose.Schema({
   bestCivs: {
     type: [String], // ✅ Keep as array of strings
   },
+   // ⬇️ NEW FIELD
+  bonus: {
+    type: String,
+    default: "",
+    trim: true
+  },
   strategies: [String],
   tournaments: [String],
   features: [String],
